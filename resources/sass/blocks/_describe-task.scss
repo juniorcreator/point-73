@@ -1,0 +1,101 @@
+.describe-task {
+  max-width: 405px;
+  width: 100% !important;
+  box-shadow: 0 7px 23px 1px rgba(0, 0, 0, 0.09);
+  background-color: #ffffff;
+  padding: 14px 13px 30px 18px;
+  overflow: hidden;
+  background-image: url("../../../resources/img/animations/new.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  &__number {
+
+
+    display: inline-block;
+    position: relative;
+    color: #000000;
+    font-family: 'BebasNeue_Bold';
+    font-size: 74px;
+    font-weight: 400;
+    line-height: 71.12px;
+    margin-bottom: 23px;
+    z-index: 1;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 12px;
+      background-color: $primary;
+      bottom: 3px;
+      right: 0;
+      z-index: -1;
+    }
+  }
+  &__title {
+    color: #000000;
+    font-family: 'Circe';
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 37px;
+    margin-bottom: 14px;
+  }
+  &__text {
+    color: #000000;
+    font-family: 'Circe';
+    font-weight: 400;
+    margin-bottom: 24px;
+    position: relative;
+    height: 83px;
+    overflow: hidden;
+    transition: height .1s;
+    font-size: 16px;
+    line-height: 21px;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(to top, white -8%, rgba(255, 255, 255, 0) 80%);
+      pointer-events: none;
+      transition: opacity 0.2s;
+    }
+  }
+  &.open {
+    .describe-task__text {
+      &:after {
+        opacity: 0;
+      }
+      height: 100%;
+    }
+  }
+  @include md_1190 {
+    max-width: 350px;
+    &__number {
+      font-size: 60px;
+      margin-bottom: 5px;
+    }
+    &__title  {
+      font-size: 20px;
+    }
+  }
+  @include sm_690 {
+    max-width: 310px;
+    &__number {
+      font-size: 40px;
+      line-height: 40.12px;
+      &:after {
+        height: 7px;
+        bottom: 5px;
+      }
+    }
+    &__title {
+      margin-bottom: 1px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}

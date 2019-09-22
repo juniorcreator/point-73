@@ -1,0 +1,207 @@
+.f-title {
+  opacity: 0.11;
+  color: #ffffff;
+  font-family: 'Mfred_regular';
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.contacts {
+  margin-bottom: 52px;
+  .f-title {
+
+  }
+  &__list {
+
+  }
+  li {
+    position: relative;
+    padding: 5px 5px 5px 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    img {
+      position: absolute;
+      left: 0;
+      top: 5px;
+      object-fit: contain;
+      max-height: 100%;
+      max-width: 24px;
+    }
+    a {
+      color: #ffffff;
+      font-family: 'Circe-Bold';
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 20.65px;
+    }
+  }
+}
+.f-nav {
+  .f-title {
+
+  }
+  &__list {
+
+  }
+  li {
+    margin-bottom: 17px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    a {
+      color: #ffffff;
+      font-family: 'Circe-Bold';
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 20.65px;
+      padding: 3px 4px;
+      position: relative;
+      z-index: 1;
+      transform: perspective(1px) translateZ(0);
+      overflow: hidden;
+      word-break: break-word;
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 0;
+        bottom: -4px;
+        height: 4px;
+        transform: translateY(4px);
+        transition-property: transform, bottom;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+        background-image: linear-gradient(to bottom, #CB5568, #F03E4B);
+      }
+      &:hover {
+        &:before {
+          transform: translateY(0);
+          bottom: 6px;
+        }
+      }
+    }
+    &.active {
+      a:before {
+        transform: translateY(0);
+        bottom: 6px;
+      }
+    }
+  }
+}
+
+.messengers {
+  .f-title {
+
+  }
+  &__wrap {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  a {
+    display: inline-block;
+    transition: transform .3s;
+    transform-origin: center;
+    margin-right: 30px;
+    backface-visibility: hidden;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      transform: scale(1.1)
+    }
+  }
+  &--contacts {
+    .f-title {
+      color: #000000;
+      font-family: 'Mfred_regular';
+      font-size: 33px;
+      font-weight: 400;
+      text-transform: uppercase;
+      opacity: 1;
+    }
+  }
+}
+
+
+
+.footer {
+  background-color: #212121;
+  padding: 84px 15px 27px 15px;
+  &__wrap {
+    display: flex;
+  }
+  &__logo {
+    margin-bottom: 29px;
+  }
+  &__subscribe {
+    display: flex;
+    .subscribe {
+      margin-right: 58px;
+    }
+  }
+  &__right-side {
+    width: 100%;
+  }
+  &__logo-side {
+    margin-right: 57px;
+  }
+  &__text {
+    > div {
+      display: flex;
+      justify-content: flex-start;
+      p {
+        max-width: 380px;
+      }
+      p:first-child {
+        margin-right: 29px;
+      }
+    }
+  }
+  &__right-top {
+    display: flex;
+    justify-content: space-between;
+    > * {
+      width: calc((100% - 30px) / 3);
+    }
+  }
+  p {
+    word-wrap: break-word;
+    color: #ffffff;
+    font-family: 'Circe-Regular';
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 22px;
+    max-width: 375px;
+  }
+  &__logo-side {
+    img {
+      object-fit: contain;
+    }
+    p {
+      margin-bottom: 82px;
+    }
+    .langs {
+      margin-bottom: 69px;
+    }
+  }
+  &__rights {
+    border-top: 1px solid #fff;
+    text-align: center;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 21.65px;
+    font-family: 'Circe-Regular';
+    padding-top: 23px;
+    margin-top: 60px;
+
+  }
+}

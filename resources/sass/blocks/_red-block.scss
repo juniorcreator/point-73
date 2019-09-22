@@ -1,0 +1,25 @@
+.red-block {
+  background: #E03E4E url("../../resources/img/home-page/red-1.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  max-width: 839px;
+  width: 100%;
+  padding: 32px 34px;
+  margin-right: 27px;
+  &__title {
+    color: #ffffff;
+    font-family: 'BebasNeue_Bold';
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 50.54px;
+    margin-bottom: 16px;
+  }
+  &__text {
+    color: #ffffff;
+    font-family: 'Circe-Regular';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20.57px;
+  }
+}

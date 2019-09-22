@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export REPOPATH=/home/timetowe/repositories/point-73/*
+    - export SITEPATH=/home/timetowe/public_html/point-73.time-to-web.com
+    - /bin/rsync -rav --exclude '.git' --exclude '.cpanel.yml' --del $REPOPATH $SITEPATH

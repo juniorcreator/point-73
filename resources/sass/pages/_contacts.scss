@@ -1,0 +1,57 @@
+.contacts-page {
+  header {
+    padding-top: 26px;
+    padding-bottom: 18px;
+  }
+  .s-header {
+    height: auto;
+    background-color: #212121;
+  }
+}
+
+.countries-info {
+  margin-bottom: 32px;
+  &__title {
+    padding-left: 42px;
+    position: relative;
+    margin-bottom: 12px;
+    img {
+      position: absolute;
+      left: 0;
+      top: 3px;
+      object-fit: contain;
+    }
+    span {
+      color: #000000;
+      font-family: 'Mfred_regular';
+      font-size: 33px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+  &__list {
+
+  }
+  li {
+    position: relative;
+    padding: 5px 5px 5px 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    img {
+      position: absolute;
+      left: 0;
+      top: 5px;
+      object-fit: contain;
+      max-height: 100%;
+      max-width: 24px;
+    }
+    a {
+      color: #ffffff;
+      font-family: "Circe-Bold";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 20.65px;
+    }
+  }
+}

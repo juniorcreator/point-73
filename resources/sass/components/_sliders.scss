@@ -1,0 +1,76 @@
+.benefit-slider {
+  max-width: 730px;
+  width: 100%;
+  .slide-heading {
+
+  }
+  &__wrap {
+
+  }
+  .slides-nav {
+
+  }
+  .slick-track {
+    //display: flex;
+    //justify-content: flex-start;
+    background-color: #fff;
+  }
+  .slick-slide {
+    text-align: center;
+    margin-right: 40px;
+    transition: none;
+    img {
+      display: inline-block;
+    }
+  }
+  .slick-current.slick-active
+  + .slick-slide.slick-active
+  + .slick-slide.slick-active{
+    .b-kinds {
+      opacity: .2;
+      &:after {
+        opacity: 0;
+      }
+    }
+  }
+  .slick-track {
+    .slick-active:last-child {
+      opacity: .2;
+    }
+  }
+
+}
+/////////
+
+.slide-results {
+  max-width: 1162px;
+  width: 100%;
+  .slick-current.slick-active
+  + .slick-slide.slick-active
+  + .slick-slide.slick-active
+  + .slick-slide.slick-active{
+    .properties {
+      opacity: .2;
+      &:after {
+        opacity: 0;
+      }
+    }
+  }
+  .slick-track {
+    background-color: #fff;
+  }
+}
+
+//////
+
+.slide-solved {
+  &__wrap {
+    margin-bottom: 36px;
+  }
+  .slick-slide {
+    margin-right: 28px;
+  }
+  .slick-list {
+    margin-right: -28px;
+  }
+}

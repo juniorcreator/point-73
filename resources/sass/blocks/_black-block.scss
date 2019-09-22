@@ -1,0 +1,21 @@
+.black-block {
+  width: 405px;
+  background-color: #000;
+  padding: 49px 33px 37px 33px;
+  margin-right: 29px;
+  &__title {
+    color: #ffffff;
+    font-family: 'BebasNeue_Bold';
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 50.54px;
+    margin-bottom: 24px;
+  }
+  &__text {
+    color: #ffffff;
+    font-family: 'Circe-Regular';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20.57px;
+  }
+}

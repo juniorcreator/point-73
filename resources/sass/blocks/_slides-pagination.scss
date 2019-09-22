@@ -1,0 +1,21 @@
+.swiper-container .swiper-pagination {
+    width: 100%;
+    bottom: 0px !important;
+    display: flex;
+    justify-content: center;
+
+    &-bullet {
+      margin-right: 8px;
+      width: 13px;
+      height: 13px;
+      background-color: transparent;
+      opacity: 0.8;
+      border: 2px solid #000;
+      &-active {
+        background-color: $primary;
+        border-color: $primary;
+        opacity: 1;
+      }
+    }
+
+  }

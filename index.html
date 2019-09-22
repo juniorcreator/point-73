@@ -1,0 +1,4031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport"/>
+	<link rel="stylesheet" href="public/css/app.css">
+	<link rel="stylesheet" href="public/fonts/font.css">
+	<link rel="stylesheet" href="public/icomoon/style.css">
+<!--	<link rel="stylesheet" href="public/css/_animations.css">-->
+	<style>
+		@font-face {
+			font-family: 'M';
+			src: url('/public/fonts/Mfred_regular.ttf') format('truetype');
+		}
+
+		.loader {
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #212121;
+			z-index: 50;
+			transition: opacity 0.4s;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.loader__logo {
+			margin-bottom: 22px;
+			opacity: 0.5;
+		}
+
+		.loader__content {
+			text-align: center;
+		}
+
+		.loader__bar {
+			max-width: 194px;
+			width: 100%;
+			background-color: #3f3f3f;
+			height: 8px;
+			margin: 18px auto 0 auto;
+			position: relative;
+			z-index: 0;
+		}
+
+		.loader__percent {
+			opacity: 0.17;
+			color: #fff;
+			font-family: 'Circe-Bold';
+			font-size: 25px;
+			font-weight: 700;
+		}
+
+		.loader__bar-inner {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 0%;
+			background-color: #e03e4e;
+			z-index: 1;
+		}
+
+		.loader__text {
+			color: #fff;
+			font-family: 'M';
+			font-size: 75px;
+			font-weight: 400;
+			line-height: 89.91px;
+			    white-space: nowrap;
+		}
+
+		.loader.hide {
+			opacity: 0;
+			z-index: -10;
+		}
+
+	</style>
+	<title>Point73</title>
+</head>
+<body>
+  <div class="loader">
+    <div class="loader__content">
+   	<div class="loader__logo">
+      	<img src="resources/img/home-page/Point73.png" alt="logo">
+      </div>
+      <p class="loader__text">Разработка Landing Page</p>
+      <p class="loader__percent">0%</p>
+      <div class="loader__bar">
+		    <span class="loader__bar-inner">
+		    </span>
+      </div>
+    </div>
+  </div>
+
+<div class="main-wrapper home-page">
+
+	<section class="s-header"
+	         style="background-image: url('resources/img/home-page/fon.png')">
+		<div class="content">
+			<header class="header">
+				<a href="#" class="header__logo">
+					<img src="resources/img/home-page/Point73.png" alt="logo">
+				</a>
+				<nav class="header__nav nav">
+					<div class="langs">
+						<a href="#"><img src="resources/img/home-page/langs/r.png" alt="ru"></a>
+						<a href="#"><img src="resources/img/home-page/langs/united-kingdom.png" alt="en"></a>
+						<a class="active" href="#"><img src="resources/img/home-page/langs/ukraine.png"
+						                                alt="ua"></a>
+					</div>
+					<ul class="nav__list">
+						<li class="nav__item active">
+							<a href="">Главная</a>
+						</li>
+						<li class="nav__item">
+							<a href="">Услуги</a>
+						</li>
+						<li class="nav__item">
+							<a href="">Портфолио</a>
+						</li>
+						<li class="nav__item">
+							<a href="">Отзывы</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__call-back call-back">
+					<a href="tel:+30969084855">+38 (096) 908-48-55</a>
+					<span>Перезвонить</span>
+				</div>
+				<div class="header__menu menu js-menu">
+					<span class="menu__line-long"></span>
+					<span class="menu__line-short"></span>
+					<p class="menu__text">MENU</p>
+				</div>
+			</header>
+			<div class="s-header__descript">
+				<div class="develop-landing">
+					<h1 class="main-title">
+						разработка landing page -
+							<div class="wm_animation main-title__line" data-animation-type="width" data-animation-duration="1800" data-animation-width="1500px"></div>
+					</h1>
+					<p class="develop-landing__text">
+						с упором на маркетинг и потрясающим
+						дизайном от <span>300$</span> за <span>14 дней</span>
+					</p>
+					<ul class="develop-landing__list">
+						<li>Окупаемость от 3 недель</li>
+						<li>Конверсия от 7%</li>
+					</ul>
+					<a href="#" class="btn btn--order-lending">
+						Заказать landing page
+					</a>
+				</div>
+
+				<div class="kinds-work">
+							<div class="wm_animation kinds-work__line" data-animation-type="height" data-animation-duration="1800" data-animation-height="500"></div>
+					<h4 class="kinds-work__title">Чем мы занимаемься ?</h4>
+					<section class="rw-wrapper">
+						<h2 class="rw-sentence">
+							<div class="rw-words rw-words-1">
+								<span class="kinds-work__subtitle">Разработка landing page</span>
+								<span class="kinds-work__subtitle">Продвижение landing page</span>
+								<span class="kinds-work__subtitle">Поддержка landing page</span>
+								<span class="kinds-work__subtitle">Дизайн для landing page</span>
+							</div>
+							<br />
+							<div class="rw-words rw-words-2">
+								<span class="kinds-work__not">&nbsp;Интернет-магазины&nbsp;</span>
+								<span class="kinds-work__not">&nbsp;Корпаративные сайты&nbsp;</span>
+								<span class="kinds-work__not">&nbsp;Интернет порталы&nbsp;</span>
+								<span class="kinds-work__not">&nbsp;Блоги&nbsp;</span>
+							</div>
+						</h2>
+					</section>
+				</div>
+			</div>
+		</div>
+
+		<div class="social">
+			<a class="social__item fb" href="#"><?xml version="1.0"?>
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				     version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px"
+				     viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;"
+				     xml:space="preserve"><g><g>
+	<path
+		d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803   c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654   c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246   c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"
+		data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
+</g></g> </svg>
+			</a>
+			<a class="social__item vk" href="#"><?xml version="1.0"?>
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 304.36 304.36" style="enable-background:new 0 0 304.36 304.36;" xml:space="preserve" width="512px" height="512px"><g><g id="XMLID_1_">
+	<path id="XMLID_807_" d="M261.945,175.576c10.096,9.857,20.752,19.131,29.807,29.982   c4,4.822,7.787,9.798,10.684,15.394c4.105,7.955,0.387,16.709-6.746,17.184l-44.34-0.02c-11.436,0.949-20.559-3.655-28.23-11.474   c-6.139-6.253-11.824-12.908-17.727-19.372c-2.42-2.642-4.953-5.128-7.979-7.093c-6.053-3.929-11.307-2.726-14.766,3.587   c-3.523,6.421-4.322,13.531-4.668,20.687c-0.475,10.441-3.631,13.186-14.119,13.664c-22.414,1.057-43.686-2.334-63.447-13.641   c-17.422-9.968-30.932-24.04-42.691-39.971C34.828,153.482,17.295,119.395,1.537,84.353C-2.01,76.458,0.584,72.22,9.295,72.07   c14.465-0.281,28.928-0.261,43.41-0.02c5.879,0.086,9.771,3.458,12.041,9.012c7.826,19.243,17.402,37.551,29.422,54.521   c3.201,4.518,6.465,9.036,11.113,12.216c5.142,3.521,9.057,2.354,11.476-3.374c1.535-3.632,2.207-7.544,2.553-11.434   c1.146-13.383,1.297-26.743-0.713-40.079c-1.234-8.323-5.922-13.711-14.227-15.286c-4.238-0.803-3.607-2.38-1.555-4.799   c3.564-4.172,6.916-6.769,13.598-6.769h50.111c7.889,1.557,9.641,5.101,10.721,13.039l0.043,55.663   c-0.086,3.073,1.535,12.192,7.07,14.226c4.43,1.448,7.35-2.096,10.008-4.905c11.998-12.734,20.561-27.783,28.211-43.366   c3.395-6.852,6.314-13.968,9.143-21.078c2.096-5.276,5.385-7.872,11.328-7.757l48.229,0.043c1.43,0,2.877,0.021,4.262,0.258   c8.127,1.385,10.354,4.881,7.844,12.817c-3.955,12.451-11.65,22.827-19.174,33.251c-8.043,11.129-16.645,21.877-24.621,33.072   C252.26,161.544,252.842,166.697,261.945,175.576L261.945,175.576z M261.945,175.576" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
+</g></g> </svg>
+			</a>
+			<a class="social__item wp" href="#"><?xml version="1.0"?>
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px"><g><g>
+	<g>
+		<path d="M256.064,0h-0.128C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104l98.4-31.456    C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z M405.024,361.504    c-6.176,17.44-30.688,31.904-50.24,36.128c-13.376,2.848-30.848,5.12-89.664-19.264C189.888,347.2,141.44,270.752,137.664,265.792    c-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624,26.176-62.304c6.176-6.304,16.384-9.184,26.176-9.184    c3.168,0,6.016,0.16,8.576,0.288c7.52,0.32,11.296,0.768,16.256,12.64c6.176,14.88,21.216,51.616,23.008,55.392    c1.824,3.776,3.648,8.896,1.088,13.856c-2.4,5.12-4.512,7.392-8.288,11.744c-3.776,4.352-7.36,7.68-11.136,12.352    c-3.456,4.064-7.36,8.416-3.008,15.936c4.352,7.36,19.392,31.904,41.536,51.616c28.576,25.44,51.744,33.568,60.032,37.024    c6.176,2.56,13.536,1.952,18.048-2.848c5.728-6.176,12.8-16.416,20-26.496c5.12-7.232,11.584-8.128,18.368-5.568    c6.912,2.4,43.488,20.48,51.008,24.224c7.52,3.776,12.48,5.568,14.304,8.736C411.2,329.152,411.2,344.032,405.024,361.504z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
+	</g>
+</g></g> </svg>
+			</a>
+			<a class="social__item te" href="#"><?xml version="1.0"?>
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" width="512px" height="512px"><g><g id="XMLID_496_">
+	<path id="XMLID_497_" d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412   c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22   c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207   c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146   c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
+</g></g> </svg>
+			</a>
+			<a class="social__item vb" href="#">
+				<?xml version="1.0" encoding="utf-8"?>
+				<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E5E5E5;}
+	.st1{fill:#665CAC;}
+</style>
+					<g>
+	<polygon class="st0" points="209.6,183.8 217.9,175.5 217.9,175.5 209.6,183.8 	"/>
+
+						<rect x="292.2" y="264.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -99.469 288.2295)" class="st0" width="11.9" height="0"/>
+</g>
+					<path class="st1" d="M307.2,0H204.8C106,0,25.6,80.4,25.6,179.2V256c0,69.4,40,132.3,102.4,162v85.5c0,7.4,9.3,11.3,14.6,6
+	l74.3-74.3h90.3c98.8,0,179.2-80.4,179.2-179.2v-76.8C486.4,80.4,406,0,307.2,0z M273.1,128c-2.5,0-5.1,0.1-7.6,0.4
+	c-4.7,0.5-8.9-2.9-9.4-7.5c-0.5-4.7,2.9-8.9,7.5-9.4c3.1-0.3,6.3-0.5,9.5-0.5c47.1,0,85.3,38.3,85.3,85.3c0,3.2-0.2,6.3-0.5,9.5
+	c-0.5,4.6-4.8,8.1-9.4,7.5c-4.6-0.5-8.1-4.8-7.5-9.4c0.3-2.5,0.4-5.1,0.4-7.6C341.3,158.6,310.7,128,273.1,128z M324.3,196.3
+	c0,4.6-3.9,8.5-8.5,8.5c-4.7,0-8.5-3.9-8.5-8.5c0-18.8-15.3-34.1-34.1-34.1c-4.7,0-8.5-3.8-8.5-8.5c0-4.7,3.8-8.5,8.5-8.5
+	C301.3,145.1,324.3,168.1,324.3,196.3z M384.8,321.5c-2.5,11-8,21-16,29c-10.9,10.9-25.7,16.5-43.4,16.5c-4.7,0-9.7-0.4-14.8-1.2
+	c-40.8-6.4-97.6-26.4-134.6-63.3l-0.5-0.5c-36.9-37-56.9-93.8-63.3-134.6c-3.8-24.3,1.5-44.4,15.3-58.2c8-8,18-13.5,29-16
+	c1.1-0.3,2.3-0.3,3.4-0.1l41.6,7.7c3.4,0.6,6.1,3.3,6.8,6.7l12.1,60.3c0.6,2.8-0.3,5.7-2.3,7.7l-24.4,24.4
+	c20.2,43.1,43.1,66.1,84.4,84.6l24.5-24.5c2-2,4.9-2.9,7.7-2.3l60.3,12.1c3.4,0.7,6.1,3.4,6.7,6.8l7.7,41.6
+	C385.1,319.2,385,320.4,384.8,321.5z M389.4,223.9c-1.1,4.6-6,7.5-10.6,6.3c-4.4-1.2-7.1-5.8-6-10.2c1.8-7.7,2.7-15.7,2.7-23.6
+	c0-56.5-45.9-102.4-102.4-102.4c-2.6,0-5.3,0.1-7.9,0.3c-4.7,0.4-8.8-3.2-9.2-7.9c-0.4-4.7,3.2-8.8,7.9-9.2c3-0.2,6.1-0.3,9.2-0.3
+	c65.9,0,119.5,53.6,119.5,119.5C392.6,205.6,391.5,214.9,389.4,223.9z"/>
+</svg>
+					</a>
+		</div>
+	</section>
+
+	<section class="s-need-page">
+		<div class="content">
+			<div class="s-need-page__left">
+				<h2 class="simple-title simple-title--about">
+					Вам нужен сайт ? - Это не к нам, <br>
+					мы делаем инструмент для продаж
+				<div class="title-height wm_animation" data-animation-type="height" data-animation-duration="1800" data-animation-height="300"></div>
+				</h2>
+				<div class="sales-instrument">
+					<p>
+						Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+						Опираясь на многолетний опыт разработки веб-страниц, которые продают.
+						Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+						Опираясь на многолетний опыт разработки веб-страниц, которые продают.
+						Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+						Опираясь на многолетний опыт разработки веб-страниц, которые продают. огда решение
+						«Быстрый старт» от нашей команды идеально вам подходит.
+					</p>
+					<div class="sales-instrument__numbers wm_animation" data-animation-type="numbers" data-animation-duration="500">
+						<div class="sales-instrument__item">
+							<span>340</span>
+							<p>Часов работы над
+							   одним проектом
+							</p>
+						</div>
+						<div class="sales-instrument__item">
+							<span>+7</span>
+							<p>И не больше! Ведем
+							   проектов в течении месяца
+							</p>
+						</div>
+						<div class="sales-instrument__item">
+							<span>90%</span>
+							<p>Клиентов продолжают
+							   с нами сотрудничество
+							</p>
+						</div>
+						<div class="sales-instrument__item">
+							<span>167</span>
+							<p>
+								Успешных проектов,
+								отправили в свободный полёт
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider-kinds">
+				<div class="slider-kinds__title">
+					Мы будем полезны в таком бизнесе:
+				</div>
+				<div class="slider-kinds__wrap swiper-container">
+					<div class="works swiper-wrapper">
+						<div class="works__item swiper-slide">
+							<div class="works__img">
+								<img src="resources/img/home-page/busines-kinds/medical-kit.svg" alt="item">
+							</div>
+							<div class="works__title">Медицина</div>
+							<div class="works__img">
+								<img src="resources/img/home-page/busines-kinds/medical-kit.svg" alt="item">
+							</div>
+							<div class="works__title">Медицина</div>
+						</div>
+						<div class="works__item swiper-slide">
+							<div class="works__img">
+								<img src="resources/img/home-page/busines-kinds/crane.svg" alt="item">
+							</div>
+							<div class="works__title">Застройщик</div>
+							<div class="works__img">
+								<img src="resources/img/home-page/busines-kinds/crane.svg" alt="item">
+							</div>
+							<div class="works__title">Застройщик</div>
+						</div>
+						<div class="works__item swiper-slide">
+							<div class="works__img">
+								<img src="resources/img/home-page/busines-kinds/presentation.svg" alt="item">
+							</div>
+							<div class="works__title">Конференции</div>
+							<div class="works__img">
+								<img src="resources/img/home-page/busines-kinds/presentation.svg" alt="item">
+							</div>
+							<div class="works__title">Конференции</div>
+						</div>
+						<div class="works__item swiper-slide">
+							<div class="works__img">
+								<img src="resources/img/home-page/busines-kinds/medical-kit.svg" alt="item">
+							</div>
+							<div class="works__title">Медицина</div>
+							<div class="works__img">
+								<img src="resources/img/home-page/busines-kinds/medical-kit.svg" alt="item">
+							</div>
+							<div class="works__title">Медицина</div>
+						</div>
+						<div class="works__item swiper-slide">
+							<div class="works__img">
+								<img src="resources/img/home-page/busines-kinds/medical-kit.svg" alt="item">
+							</div>
+							<div class="works__title">Медицина</div>
+							<div class="works__img">
+								<img src="resources/img/home-page/busines-kinds/medical-kit.svg" alt="item">
+							</div>
+							<div class="works__title">Медицина</div>
+						</div>
+					</div>
+				</div>
+				<div class="slides-nav trust" id="works">
+					<button class="slides-nav__nav prev">
+						<?xml version="1.0" encoding="iso-8859-1"?>
+						<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						     viewBox="0 0 31.494 31.494" style="enable-background:new 0 0 31.494 31.494;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
+	c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
+	c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"/>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+</svg>
+
+					</button><button class="slides-nav__nav next">
+					<?xml version="1.0" encoding="iso-8859-1"?>
+					<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					     viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+	C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+	c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+</svg>
+
+				</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s-plusses">
+		<div class="content">
+			<h2 class="simple-title">
+				Выгоды при разработке <br>
+				<span>
+              landing page  с point73
+            </span>
+              <div class="title-width wm_animation" data-animation-type="width" data-animation-duration="3000" data-animation-width="1000px"></div>
+			</h2>
+			<div class="plusses">
+				<div class="plusses__wrap">
+					<div class="garants-item garants-item--wide wm_animation" data-animation-type="opacity" data-animation-duration="1500">
+						<p class="garants-item__title">
+							<img src="resources/img/home-page/garants/1.svg" alt="item" style="max-width: 60px;">
+							<span>Аналитика<br> рентабельности</span>
+						</p>
+						<p class="garants-item__text">
+							Отзывы покупателей, сертификаты, награды - каждый элемент,
+							способный повысить доверие потенциального клиента
+							на вас.
+							Отзывы покупателей, сертификаты, награды - каждый элемент,
+							способный повысить доверие потенциального клиента
+							на вас.
+						</p>
+						<button class="srpead js-spread-garants">Развернуть</button>
+					</div>
+					<div class="garants-item garants-item--wide wm_animation" data-animation-type="opacity" data-animation-duration="1500">
+						<p class="garants-item__title">
+							<img src="resources/img/home-page/garants/2.svg" alt="item">
+							<span>
+                    Перфекционизм<br> в дизайне
+                  </span>
+						</p>
+						<p class="garants-item__text">
+							Отзывы покупателей, сертификаты, награды - каждый элемент,
+							способный повысить доверие потенциального клиента
+							на вас.
+							Отзывы покупателей, сертификаты, награды - каждый элемент,
+							способный повысить доверие потенциального клиента
+							на вас.
+						</p>
+						<button class="srpead js-spread-garants">Развернуть</button>
+					</div>
+					<div class="garants-item garants-item--wide wm_animation" data-animation-type="opacity" data-animation-duration="1500">
+						<p class="garants-item__title">
+							<img src="resources/img/home-page/garants/3.svg" alt="item">
+							<span>Упор<br> на маркетинг</span>
+						</p>
+						<p class="garants-item__text">
+							Отзывы покупателей, сертификаты, награды - каждый элемент,
+							способный повысить доверие потенциального клиента
+							на вас.
+							Отзывы покупателей, сертификаты, награды - каждый элемент,
+							способный повысить доверие потенциального клиента
+							на вас.
+						</p>
+						<button class="srpead js-spread-garants">Развернуть</button>
+					</div>
+					<div class="garants-item garants-item--wide wm_animation" data-animation-type="opacity" data-animation-duration="1500">
+						<p class="garants-item__title">
+							<img src="resources/img/home-page/garants/4.svg" alt="item">
+							<span>Анализ <br>вашей бизнеса</span>
+						</p>
+						<p class="garants-item__text">
+							Отзывы покупателей, сертификаты, награды - каждый элемент,
+							способный повысить доверие потенциального клиента
+							на вас.
+							Отзывы покупателей, сертификаты, награды - каждый элемент,
+							способный повысить доверие потенциального клиента
+							на вас.
+						</p>
+						<button class="srpead js-spread-garants">Развернуть</button>
+					</div>
+					<div class="garants-item garants-item--wide wm_animation" data-animation-type="opacity" data-animation-duration="1500">
+						<p class="garants-item__title">
+							<img src="resources/img/home-page/garants/5.svg" alt="item">
+							<span>Продолжительное<br> сотрудничество</span>
+						</p>
+						<p class="garants-item__text">
+							Отзывы покупателей, сертификаты, награды - каждый элемент,
+							способный повысить доверие потенциального клиента
+							на вас.
+						</p>
+						<button class="srpead js-spread-garants">Развернуть</button>
+					</div>
+					<div class="garants-item garants-item--wide wm_animation" data-animation-type="opacity" data-animation-duration="1500">
+						<p class="garants-item__title">
+							<img src="resources/img/home-page/garants/6.svg" alt="item">
+							<span>Новые методы<br> продвижения</span>
+						</p>
+						<p class="garants-item__text">
+							Отзывы покупателей, сертификаты, награды - каждый элемент,
+							способный повысить доверие потенциального клиента
+							на вас.
+						</p>
+						<button class="srpead js-spread-garants">Развернуть</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s-solved">
+		<div class="wide-content">
+			<h2 class="simple-title simple-title--solved">
+				Узнаете проблемы вашего бизнеса? <br>
+				<span> Мы решали уже ваши проблемы ни один раз!</span>
+				<div class="title-height wm_animation" data-animation-type="height" data-animation-duration="1800" data-animation-height="200"></div>
+			</h2>
+		</div>
+		<div class="slide-solved swiper-container">
+			<div class="slide-solved__wrap swiper-wrapper">
+				<div class="describe-task swiper-slide">
+					<p class="describe-task__number">
+						01
+					</p>
+					<p class="describe-task__title">
+						Нет доверия ?
+					</p>
+					<p class="describe-task__text">
+						Отзывы покупателей, сертификаты, награды - каждый элемент,
+						способный повысить доверие потенциального клиента
+						к предприятию, должен присутствовать на вас.
+						Отзывы покупателей, сертификаты, награды - каждый элемент,
+						способный повысить доверие потенциального клиента
+						к предприятию, должен присутствовать на вас.
+					</p>
+					<button class="srpead js-slide-solved">Развернуть</button>
+				</div>
+				<div class="describe-task swiper-slide">
+					<p class="describe-task__number">
+						02
+					</p>
+					<p class="describe-task__title">
+						Создать поток клиентов?
+					</p>
+					<p class="describe-task__text">
+						Отзывы покупателей, сертификаты, награды - каждый элемент,
+						способный повысить доверие потенциального клиента
+						к предприятию, должен присутствовать на вас.
+						Отзывы покупателей, сертификаты, награды - каждый элемент,
+						способный повысить доверие потенциального клиента
+						к предприятию, должен присутствовать на вас.
+					</p>
+					<button class="srpead js-slide-solved">Развернуть</button>
+				</div>
+				<div class="describe-task swiper-slide">
+					<p class="describe-task__number">
+						03
+					</p>
+					<p class="describe-task__title">
+						Выделить среди аналогов?
+					</p>
+					<p class="describe-task__text">
+						Отзывы покупателей, сертификаты, награды - каждый элемент,
+						способный повысить доверие потенциального клиента
+						к предприятию, должен присутствовать на вас.
+					</p>
+					<button class="srpead js-slide-solved">Развернуть</button>
+				</div>
+				<div class="describe-task swiper-slide">
+					<p class="describe-task__number">
+						04
+					</p>
+					<p class="describe-task__title">
+						Клиенты уходят?
+					</p>
+					<p class="describe-task__text">
+						Отзывы покупателей, сертификаты, награды - каждый элемент,
+						способный повысить доверие потенциального клиента
+						к предприятию, должен присутствовать на вас.
+					</p>
+					<button class="srpead js-slide-solved">Развернуть</button>
+				</div>
+				<div class="describe-task swiper-slide">
+					<p class="describe-task__number">
+						05
+					</p>
+					<p class="describe-task__title">
+						Нет доверия ?
+					</p>
+					<p class="describe-task__text">
+						Отзывы покупателей, сертификаты, награды - каждый элемент,
+						способный повысить доверие потенциального клиента
+						к предприятию, должен присутствовать на вас.
+					</p>
+					<button class="srpead js-slide-solved">Развернуть</button>
+				</div>
+				<div class="describe-task swiper-slide">
+					<p class="describe-task__number">
+						06
+					</p>
+					<p class="describe-task__title">
+						Нет доверия ?
+					</p>
+					<p class="describe-task__text">
+						Отзывы покупателей, сертификаты, награды - каждый элемент,
+						способный повысить доверие потенциального клиента
+						к предприятию, должен присутствовать на вас.
+					</p>
+					<button class="srpead js-slide-solved">Развернуть</button>
+				</div>
+				<div class="describe-task swiper-slide">
+					<p class="describe-task__number">
+						07
+					</p>
+					<p class="describe-task__title">
+						Нет доверия ?
+					</p>
+					<p class="describe-task__text">
+						Отзывы покупателей, сертификаты, награды - каждый элемент,
+						способный повысить доверие потенциального клиента
+						к предприятию, должен присутствовать на вас.
+					</p>
+					<button class="srpead js-slide-solved">Развернуть</button>
+				</div>
+				<div class="describe-task swiper-slide">
+					<p class="describe-task__number">
+						08
+					</p>
+					<p class="describe-task__title">
+						Нет доверия ?
+					</p>
+					<p class="describe-task__text">
+						Отзывы покупателей, сертификаты, награды - каждый элемент,
+						способный повысить доверие потенциального клиента
+						к предприятию, должен присутствовать на вас.
+					</p>
+					<button class="srpead js-slide-solved">Развернуть</button>
+				</div>
+			</div>
+		</div>
+		<div class="wide-content">
+			<div class="slides-nav slides-nav--solved" id="slide_solved">
+				<button class="slides-nav__nav prev">
+					<?xml version="1.0" encoding="iso-8859-1"?>
+					<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					     viewBox="0 0 31.494 31.494" style="enable-background:new 0 0 31.494 31.494;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
+	c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
+	c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"/>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+</svg>
+
+				</button><button class="slides-nav__nav next">
+				<?xml version="1.0" encoding="iso-8859-1"?>
+				<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+				<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				     viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+	C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+	c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+</svg>
+				</button>
+			</div>
+			<div class="swiper-pagination"></div>
+
+		</div>
+	</section>
+
+	<section class="s-marketing">
+		<div class="content">
+			<h2 class="simple-title simple-title--good-mark">
+				Что такое хорошая посадочная <br>
+				<span>страница с упором на маркетинг?</span>
+				<div class="title-width wm_animation" data-animation-type="width" data-animation-duration="3000" data-animation-width="1000px"></div>
+			</h2>
+		</div>
+		<div class="marketing swiper-container">
+			<div class="marketing__wrap swiper-wrapper">
+				<div class="marketing__item swiper-slide">
+					<div class="slider-marketing">
+						<div class="slider-marketing__wrap">
+							<div class="slider-marketing__item">
+								<div class="slider-marketing__l">
+									<div class="slider-marketing__insiede">
+										<h5>Анализ рентабельности бизнеса</h5>
+										<p>
+											Отзывы покупателей, сертификаты, награды - каждый элемент,
+											способный повысить доверие потенциального клиента
+											к предприятию, должен присутствовать Отзывы покупателей,
+										</p>
+										<ul>
+											<li>И не больше! Ведем проектов в течении месяца</li>
+											<li>И не больше! Ведем проектов в течении месяца</li>
+											<li>И не больше! Ведем проектов в течении месяца</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="slides-nav slides-nav--comments slides-nav--marketing">
+							<button class="slides-nav__nav prev">
+								<?xml version="1.0" encoding="iso-8859-1"?>
+								<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								     viewBox="0 0 31.494 31.494" style="enable-background:new 0 0 31.494 31.494;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
+	c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
+	c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"/>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+</svg>
+
+							</button><button class="slides-nav__nav next">
+							<?xml version="1.0" encoding="iso-8859-1"?>
+							<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							     viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+	C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+	c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+</svg>
+						</button>
+						</div>
+					</div>
+					<div class="marketing__right">
+						<div class="slider-profit__item animation">
+							<div class="animation__left">
+                    <span class="animation__roi">
+                      ROI*
+                    </span>
+								<span class="animation__profit">
+                  <span> Прибыль</span>
+                  <img class="animation__box" src="resources/img/animations/box.svg" alt="">
+                </span>
+								<img class="animation__dol dol1" src="resources/img/animations/dollar.svg" alt="">
+								<img class="animation__dol dol2" src="resources/img/animations/dollar.svg" alt="">
+
+								<img class="animation__monit" src="resources/img/animations/monitor.png" alt="">
+								<img class="animation__set" src="resources/img/animations/setting.png" alt="">
+								<div class="animation__inner">
+                  <span class="animation__add">
+                    <img class="animation__louder" src="resources/img/animations/louder.svg" alt="">
+                    <span>Реклама</span>
+                  </span>
+									<span class="animation__page">Сайт</span>
+									<img class="animation__dol dol3" src="resources/img/animations/dollar.svg" alt="">
+
+								</div>
+							</div>
+	              <div class="animation__right">
+		              <div class="animation__top">
+			              <div class="animation__clients">
+				              <img src="resources/img/animations/arrow.png" alt="">
+				              <img src="resources/img/animations/clients.png" alt="">
+			              </div>
+			              <span>Клиенты</span>
+		              </div>
+	                <button class="btn btn--order-lending btn--count js-quiz-open">
+	                  рассчитать онлайн
+	                </button>
+	              </div>
+						</div>
+					</div>
+				</div>
+				<div class="marketing__item swiper-slide">
+					<div class="slider-marketing">
+						<div class="slider-marketing__wrap">
+							<div class="slider-marketing__item">
+								<div class="slider-marketing__l">
+									<div class="slider-marketing__insiede">
+										<h5>Анализ рентабельности бизнеса</h5>
+										<p>
+											Отзывы покупателей, сертификаты, награды - каждый элемент,
+											способный повысить доверие потенциального клиента
+											к предприятию, должен присутствовать Отзывы покупателей,
+										</p>
+										<ul>
+											<li>И не больше! Ведем проектов в течении месяца</li>
+											<li>И не больше! Ведем проектов в течении месяца</li>
+											<li>И не больше! Ведем проектов в течении месяца</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slides-nav slides-nav--comments slides-nav--marketing">
+							<button class="slides-nav__nav prev">
+								<?xml version="1.0" encoding="iso-8859-1"?>
+								<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								     viewBox="0 0 31.494 31.494" style="enable-background:new 0 0 31.494 31.494;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
+	c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
+	c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"/>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+</svg>
+
+							</button><button class="slides-nav__nav next">
+							<?xml version="1.0" encoding="iso-8859-1"?>
+							<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							     viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+	C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+	c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+</svg>
+						</button>
+						</div>
+					</div>
+					<div class="marketing__right">
+						<div class="slider-profit__item animation">
+							<div class="animation__left">
+                    <span class="animation__roi">
+                      ROI*
+                    </span>
+								<span class="animation__profit">
+                  <span> Прибыль</span>
+                  <img class="animation__box" src="resources/img/animations/box.svg" alt="">
+                </span>
+								<img class="animation__dol dol1" src="resources/img/animations/dollar.svg" alt="">
+								<img class="animation__dol dol2" src="resources/img/animations/dollar.svg" alt="">
+
+								<img class="animation__monit" src="resources/img/animations/monitor.png" alt="">
+								<img class="animation__set" src="resources/img/animations/setting.png" alt="">
+								<div class="animation__inner">
+                  <span class="animation__add">
+                    <img class="animation__louder" src="resources/img/animations/louder.svg" alt="">
+                    <span>Реклама</span>
+                  </span>
+									<span class="animation__page">Сайт</span>
+									<img class="animation__dol dol3" src="resources/img/animations/dollar.svg" alt="">
+
+								</div>
+							</div>
+							<div class="animation__right">
+								<div class="animation__top">
+									<div class="animation__clients">
+										<img src="resources/img/animations/arrow.png" alt="">
+										<img src="resources/img/animations/clients.png" alt="">
+									</div>
+									<span>Клиенты</span>
+								</div>
+								<button class="btn btn--order-lending btn--count js-quiz-open">
+									рассчитать онлайн
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="marketing__item swiper-slide">
+					<div class="slider-marketing">
+						<div class="slider-marketing__wrap">
+							<div class="slider-marketing__item">
+								<div class="slider-marketing__l">
+									<div class="slider-marketing__insiede">
+										<h5>Анализ рентабельности бизнеса</h5>
+										<p>
+											Отзывы покупателей, сертификаты, награды - каждый элемент,
+											способный повысить доверие потенциального клиента
+											к предприятию, должен присутствовать Отзывы покупателей,
+										</p>
+										<ul>
+											<li>И не больше! Ведем проектов в течении месяца</li>
+											<li>И не больше! Ведем проектов в течении месяца</li>
+											<li>И не больше! Ведем проектов в течении месяца</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slides-nav slides-nav--comments slides-nav--marketing">
+							<button class="slides-nav__nav prev">
+								<?xml version="1.0" encoding="iso-8859-1"?>
+								<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								     viewBox="0 0 31.494 31.494" style="enable-background:new 0 0 31.494 31.494;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
+	c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
+	c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"/>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+</svg>
+
+							</button><button class="slides-nav__nav next">
+							<?xml version="1.0" encoding="iso-8859-1"?>
+							<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							     viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+	C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+	c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+</svg>
+						</button>
+						</div>
+					</div>
+					<div class="marketing__right">
+						<div class="slider-profit__item animation">
+							<div class="animation__left">
+                    <span class="animation__roi">
+                      ROI*
+                    </span>
+								<span class="animation__profit">
+                  <span> Прибыль</span>
+                  <img class="animation__box" src="resources/img/animations/box.svg" alt="">
+                </span>
+								<img class="animation__dol dol1" src="resources/img/animations/dollar.svg" alt="">
+								<img class="animation__dol dol2" src="resources/img/animations/dollar.svg" alt="">
+
+								<img class="animation__monit" src="resources/img/animations/monitor.png" alt="">
+								<img class="animation__set" src="resources/img/animations/setting.png" alt="">
+								<div class="animation__inner">
+                  <span class="animation__add">
+                    <img class="animation__louder" src="resources/img/animations/louder.svg" alt="">
+                    <span>Реклама</span>
+                  </span>
+									<span class="animation__page">Сайт</span>
+									<img class="animation__dol dol3" src="resources/img/animations/dollar.svg" alt="">
+
+								</div>
+							</div>
+							<div class="animation__right">
+								<div class="animation__top">
+									<div class="animation__clients">
+										<img src="resources/img/animations/arrow.png" alt="">
+										<img src="resources/img/animations/clients.png" alt="">
+									</div>
+									<span>Клиенты</span>
+								</div>
+								<button class="btn btn--order-lending btn--count js-quiz-open">
+									рассчитать онлайн
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider-profit__pagin swiper-pagination"></div>
+		</div>
+	</section>
+
+	<section class="s-specifics">
+		<div class="content">
+			<h2 class="simple-title simple-title--specifics">
+				Особенности наших Landing Page, <br>
+				которые будет иметь ваш инструмент продаж
+				<div class="title-height wm_animation" data-animation-type="height" data-animation-duration="1800" data-animation-height="300"></div>
+			</h2>
+		</div>
+		<div class="slide-specifics">
+			<div class="slide-specifics__left">
+				<div data-slide='1' class="slide-specifics__item slide-specifics__item--active"
+				     style="background-image: url('resources/img/specific/1.png')">
+					<div class="slide-specifics__content">
+						<p class="slide-specifics__title">
+							Уникальный дизайн
+						</p>
+
+						<p class="slide-specifics__text">
+							Отзывы покупателей, сертификаты, награды -
+							каждый элемент, способный повысить доверие
+							потенциального клиента к предприятию, должен присутствовать
+							на landing page. Добавляем логотипы фирм-клиентов, статистику,
+							политику конфиденциальности - все это работает
+							на вас.
+						</p>
+					</div>
+				</div>
+				<div data-slide='2' class="slide-specifics__item"
+				     style="background-image: url('resources/img/specific/2.png')">
+					<div class="slide-specifics__content">
+						<p class="slide-specifics__title">
+							Адаптация под все устройства
+						</p>
+						<p class="slide-specifics__text">
+							Отзывы покупателей, сертификаты, награды -
+							каждый элемент, способный повысить доверие
+							потенциального клиента к предприятию, должен присутствовать
+							на landing page. Добавляем логотипы фирм-клиентов, статистику,
+							политику конфиденциальности - все это работает
+							на вас.
+						</p>
+					</div>
+				</div>
+				<div data-slide='3' class="slide-specifics__item"
+				     style="background-image: url('resources/img/specific/3.png')">
+					<div class="slide-specifics__content">
+						<p class="slide-specifics__title">
+							Скорость загрузки - до 2 секунд
+						</p>
+						<p class="slide-specifics__text">
+							Отзывы покупателей, сертификаты, награды -
+							каждый элемент, способный повысить доверие
+							потенциального клиента к предприятию, должен присутствовать
+							на landing page. Добавляем логотипы фирм-клиентов, статистику,
+							политику конфиденциальности - все это работает
+							на вас.
+						</p>
+					</div>
+				</div>
+				<div data-slide='4' class="slide-specifics__item"
+				     style="background-image: url('resources/img/specific/4.png')">
+					<div class="slide-specifics__content">
+						<p class="slide-specifics__title">
+							КОНВЕРСИЯ 5-15%
+						</p>
+						<p class="slide-specifics__text">
+							Отзывы покупателей, сертификаты, награды -
+							каждый элемент, способный повысить доверие
+							потенциального клиента к предприятию, должен присутствовать
+							на landing page. Добавляем логотипы фирм-клиентов, статистику,
+							политику конфиденциальности - все это работает
+							на вас.
+						</p>
+					</div>
+				</div>
+				<div data-slide='5' class="slide-specifics__item"
+				     style="background-image: url('resources/img/specific/5.png')">
+					<div class="slide-specifics__content">
+						<p class="slide-specifics__title">
+							10-20 РУБ ЗА КЛИК
+						</p>
+						<p class="slide-specifics__text">
+							Отзывы покупателей, сертификаты, награды -
+							каждый элемент, способный повысить доверие
+							потенциального клиента к предприятию, должен присутствовать
+							на landing page. Добавляем логотипы фирм-клиентов, статистику,
+							политику конфиденциальности - все это работает
+							на вас.
+						</p>
+					</div>
+				</div>
+				<div data-slide='6' class="slide-specifics__item"
+				     style="background-image: url('resources/img/specific/6.png')">
+					<div class="slide-specifics__content">
+						<p class="slide-specifics__title">
+							Панель управления WordPress
+						</p>
+						<p class="slide-specifics__text">
+							Отзывы покупателей, сертификаты, награды -
+							каждый элемент, способный повысить доверие
+							потенциального клиента к предприятию, должен присутствовать
+							на landing page. Добавляем логотипы фирм-клиентов, статистику,
+							политику конфиденциальности - все это работает
+							на вас.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="slide-specifics__right">
+				<ul class="slide-specifics__nav">
+					<li data-slide="1" class="slide-specifics__link slide-specifics__link--active wm_animation" data-animation-type="width" data-animation-duration="3000" data-animation-width="100%" style='width: 0px;'>
+						Уникальный дизайн
+					</li>
+					<li data-slide="2" class="slide-specifics__link">
+						Адаптация под все устройства
+					</li>
+					<li data-slide="3" class="slide-specifics__link">
+						Скорость загрузки - до 2 секунд
+					</li>
+					<li data-slide="4" class="slide-specifics__link">
+						Конверсия 5-15%
+					</li>
+					<li data-slide="5" class="slide-specifics__link">
+						10-20 руб за клик
+					</li>
+					<li data-slide="6" class="slide-specifics__link">
+						Панель управления WordPress
+					</li>
+				</ul>
+				<div class="slide-specifics__btns">
+					<div id="nav_specifics" class="slides-nav">
+						<button class="slides-nav__nav prev">
+							<?xml version="1.0" encoding="iso-8859-1"?>
+							<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							     viewBox="0 0 31.494 31.494" style="enable-background:new 0 0 31.494 31.494;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
+	c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
+	c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"/>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+</svg>
+
+						</button><button class="slides-nav__nav next">
+						<?xml version="1.0" encoding="iso-8859-1"?>
+						<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						     viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+	C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+	c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+</svg>
+						</button>
+					</div>
+				</div>
+				<a href="#">Список всех базовых функций</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="s-action"
+	         style="background-image: url('resources/img/home-page/actioon.bg.png')">
+		<div class="content">
+			<div class="action">
+				<div class="action__content">
+					<h2 class="simple-title simple-title--sale">
+						Мы начали собирать видеоотзывы!
+						<div class="title-width wm_animation" data-animation-type="width" data-animation-duration="3000" data-animation-width="1000px"></div>
+					</h2>
+					<p class="action__subtitle">
+						Оставьте видеоотзыв и получите один из 4 подарков:
+					</p>
+					<div class="action__items-wrap">
+						<div class="action-item">
+							<div class="action-item__img">
+								<img src="resources/img/home-page/actions/1.svg" alt="img" style="max-width: 50px;">
+							</div>
+							<p class="action-item__text">
+								Скидку 15%<br>
+								на любой пакет
+							</p>
+						</div>
+						<div class="action-item">
+							<div class="action-item__img">
+								<img src="resources/img/home-page/actions/2.svg" alt="img">
+							</div>
+							<p class="action-item__text">
+								Калькулятор<br>
+								расчета стоимости
+							</p>
+						</div>
+						<div class="action-item">
+							<div class="action-item__img">
+								<img src="resources/img/home-page/actions/3.svg" alt="img">
+							</div>
+							<p class="action-item__text">
+								Оплаченый<br>
+								на год хостинг
+							</p>
+						</div>
+						<div class="action-item">
+							<div class="action-item__img">
+								<img src="resources/img/home-page/actions/4.svg" alt="img" style="max-width: 58px; margin-bottom: -6px;">
+							</div>
+							<p class="action-item__text">
+								Квиз <br>
+								вопросов
+							</p>
+						</div>
+					</div>
+					<div class="action__descript action__descript--comm">
+						Осталось собрать 2 видеотзыва!
+					</div>
+				</div>
+				<div class="action__form">
+					<div class="action-form">
+						<div class="action-form__wrap">
+							<p class="action-form__title">
+								Оставьте заявку
+							</p>
+							<p class="action-form__subtitle">
+								и мы свяжемся с Вами!
+							</p>
+							<form action="" class="action-form__form">
+								<div class="action-form__reply">
+									<p class="action-form__reply-text">
+										Куда вам ответить?
+									</p>
+									<div class="action-form__reply-icons">
+										<label>
+											<input checked type="radio" value="mail" name="n">
+											<i class="icon-envelope"></i>
+										</label>
+										<label>
+											<input type="radio" value="whatsapp" name="n">
+											<i class="icon-whatsapp"></i>
+										</label>
+										<label>
+											<input type="radio" value="telegram" name="n">
+											<i class="icon-telegram"></i>
+										</label>
+									</div>
+								</div>
+								<input type="text" name="name" required placeholder="Имя">
+								<input type="tel" name="phone" placeholder="Телефон">
+								<div class="action-form__bottom">
+									<div class="action-form__message">
+										<span class="action-form__plus">+</span>
+										<span class="action-form__text">
+                          Сообщение
+                        </span>
+									</div>
+									<label class="action-form__file">
+										<input type="file">
+										<img src="resources/img/home-page/forms/clip.png" alt="file">
+										<span class="action-form__text">Прикрепиить файл</span>
+									</label>
+								</div>
+								<textarea class="action-form__textarea" name="formMessage"></textarea>
+								<button type="submit" class="btn btn--order-lending btn--order-package">
+									заказать пакет
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s-strong-result">
+		<h2 class="simple-title simple-title--centered">
+			Залог высоких продаж - <br>
+			<span>учёт малейших психологических деталей</span>
+
+		</h2>
+		<div class="content">
+			<div class="strong-results">
+				<div class="strong-results__wrap">
+					<div class="strong-results__left">
+						<div class="strong-results__item wm_animation" data-animation-type="left" data-animation-duration="1800">
+ 							<p class="strong-results__title">
+								<span>Расставляем ловушки</span>
+								<img src="resources/img/home-page/pcyho/1.svg" alt="item">
+								</p>
+							<p class="strong-results__text">
+								Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+								Тогда решение «Быстрый старт»
+								от нашей команды
+							</p>
+						</div>
+						<div class="strong-results__item wm_animation" data-animation-type="left" data-animation-duration="1800">
+							<p class="strong-results__title">
+								<span>Наращиваем интерес</span>
+								<img src="resources/img/home-page/pcyho/2.svg" alt="item">
+							</p>
+							<p class="strong-results__text">
+								Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+								Тогда решение «Быстрый старт»
+								от нашей команды
+							</p>
+						</div>
+						<div class="strong-results__item wm_animation" data-animation-type="left" data-animation-duration="1800">
+							<p class="strong-results__title">
+								<span>Анализируем нишу</span>
+								<img src="resources/img/home-page/pcyho/3.svg" alt="item">
+								</p>
+							<p class="strong-results__text">
+								Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+								Тогда решение «Быстрый старт»
+								от нашей команды
+							</p>
+						</div>
+					</div>
+					<div class="strong-results__img">
+						<img src="resources/img/home-page/mobile.png" alt="point74">
+					</div>
+					<div class="strong-results__right">
+						<div class="strong-results__item wm_animation" data-animation-type="right" data-animation-duration="1800">
+							<p class="strong-results__title">
+								<span>Создаем асоциации</span>
+								<img src="resources/img/home-page/pcyho/4.svg" alt="item">
+									</p>
+							<p class="strong-results__text">
+								Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+								Тогда решение «Быстрый старт»
+								от нашей команды
+							</p>
+						</div>
+						<div class="strong-results__item wm_animation" data-animation-type="right" data-animation-duration="1800">
+							<p class="strong-results__title">
+								<span>Выжимаем максимум с маркетинга</span>
+								<img src="resources/img/home-page/pcyho/5.svg" alt="item">
+								</p>
+							<p class="strong-results__text">
+								Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+								Тогда решение «Быстрый старт»
+								от нашей команды
+							</p>
+						</div>
+						<div class="strong-results__item wm_animation" data-animation-type="right" data-animation-duration="1800">
+							<p class="strong-results__title">
+								<span>Призываем к действию</span>
+								<img src="resources/img/home-page/pcyho/6.svg" alt="item">
+								</p>
+							<p class="strong-results__text">
+								Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+								Тогда решение «Быстрый старт»
+								от нашей команды
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s-marketing s-marketing--second">
+		<div class="content">
+			<h2 class="simple-title">
+				Как нам удается<br>
+				добиваться мощных результатов?
+				<div class="title-width wm_animation" data-animation-type="width" data-animation-duration="3000" data-animation-width="1000px"></div>
+			</h2>
+
+
+		</div>
+		<div class="m-slide swiper-container">
+			<div class="m-slide__wrap swiper-wrapper">
+				<div class="m-slide__item swiper-slide">
+					<div class="m-left">
+						<div class="m-left__wrap">
+							<div class="m-left__inner">
+								<div class="m-left__inside">
+									<h5>A/B testing </h5>
+									<p>
+										Отзывы покупателей, сертификаты, награды - каждый элемент,
+										способный повысить доверие потенциального клиента
+										к предприятию, должен присутствовать Отзывы покупателей,
+									</p>
+									<ul>
+										<li>И не больше! Ведем проектов в течении месяца</li>
+										<li>И не больше! Ведем проектов в течении месяца</li>
+										<li>И не больше! Ведем проектов в течении месяца</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="slides-nav slides-nav--m">
+							<button class="slides-nav__nav prev">
+								<?xml version="1.0" encoding="iso-8859-1"?>
+								<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								     viewBox="0 0 31.494 31.494" style="enable-background:new 0 0 31.494 31.494;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
+	c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
+	c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"/>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+</svg>
+
+							</button><button class="slides-nav__nav next">
+							<?xml version="1.0" encoding="iso-8859-1"?>
+							<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							     viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+	C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+	c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+</svg>
+						</button>
+						</div>
+					</div>
+					<div class="m-right">
+						<div class="m-right__item">
+							<div class="ab-wrap">
+								<div class="ab-wrap__top">
+									<img src="resources/img/animations/ab/ab-top.png" alt="">
+								</div>
+								<div class="ab-wrap__middle">
+									<img src="resources/img/animations/ab/ab-middle.png" alt="">
+									<div class="ab-plus-wrap">
+										<div class="ab-plus">
+											<span>+2%</span>
+											<p>Конверсии</p>
+											<div></div>
+										</div>
+									</div>
+									<div class='ab-wrap__middle-swap'>
+										<img class="" src='resources/img/animations/ab/ab__block1.png' alt="">
+										<div><span>Маркетолог</span></div>
+									</div>
+								</div>
+								<div class="ab-wrap__bottom">
+									<img src="resources/img/animations/ab/ab-bottom.png" alt="">
+									<div class="ab-plus-wrap">
+										<div class="ab-plus">
+											<span>+1%</span>
+											<p>Конверсии</p>
+											<div></div>
+										</div>
+									</div>
+									<div class='ab-wrap__bottom-swap'>
+										<img class="" src='resources/img/animations/ab/ab__block2.png' alt="">
+										<div><span>Маркетолог</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="m-slide__item swiper-slide">
+					<div class="m-left">
+						<div class="m-left__wrap">
+							<div class="m-left__inner">
+								<div class="m-left__inside">
+									<h5>A/B testing </h5>
+									<p>
+										Отзывы покупателей, сертификаты, награды - каждый элемент,
+										способный повысить доверие потенциального клиента
+										к предприятию, должен присутствовать Отзывы покупателей,
+									</p>
+									<ul>
+										<li>И не больше! Ведем проектов в течении месяца</li>
+										<li>И не больше! Ведем проектов в течении месяца</li>
+										<li>И не больше! Ведем проектов в течении месяца</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="slides-nav slides-nav--m">
+							<button class="slides-nav__nav prev">
+								<?xml version="1.0" encoding="iso-8859-1"?>
+								<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								     viewBox="0 0 31.494 31.494" style="enable-background:new 0 0 31.494 31.494;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
+	c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
+	c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"/>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+</svg>
+
+							</button><button class="slides-nav__nav next">
+							<?xml version="1.0" encoding="iso-8859-1"?>
+							<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							     viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+	C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+	c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+</svg>
+						</button>
+						</div>
+					</div>
+					<div class="m-right">
+						<div class="m-right__item">
+							<div class="ab-wrap">
+								<div class="ab-wrap__top">
+									<img src="resources/img/animations/ab/ab-top.png" alt="">
+								</div>
+								<div class="ab-wrap__middle">
+									<img src="resources/img/animations/ab/ab-middle.png" alt="">
+									<div class="ab-plus-wrap">
+										<div class="ab-plus">
+											<span>+2%</span>
+											<p>Конверсии</p>
+											<div></div>
+										</div>
+									</div>
+									<div class='ab-wrap__middle-swap'>
+										<img class="" src='resources/img/animations/ab/ab__block1.png' alt="">
+										<div><span>Маркетолог</span></div>
+									</div>
+								</div>
+								<div class="ab-wrap__bottom">
+									<img src="resources/img/animations/ab/ab-bottom.png" alt="">
+									<div class="ab-plus-wrap">
+										<div class="ab-plus">
+											<span>+1%</span>
+											<p>Конверсии</p>
+											<div></div>
+										</div>
+									</div>
+									<div class='ab-wrap__bottom-swap'>
+										<img class="" src='resources/img/animations/ab/ab__block2.png' alt="">
+										<div><span>Маркетолог</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="m-slide__item swiper-slide">
+					<div class="m-left">
+						<div class="m-left__wrap">
+							<div class="m-left__inner">
+								<div class="m-left__inside">
+									<h5>A/B testing </h5>
+									<p>
+										Отзывы покупателей, сертификаты, награды - каждый элемент,
+										способный повысить доверие потенциального клиента
+										к предприятию, должен присутствовать Отзывы покупателей,
+									</p>
+									<ul>
+										<li>И не больше! Ведем проектов в течении месяца</li>
+										<li>И не больше! Ведем проектов в течении месяца</li>
+										<li>И не больше! Ведем проектов в течении месяца</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="slides-nav slides-nav--m">
+							<button class="slides-nav__nav prev">
+								<?xml version="1.0" encoding="iso-8859-1"?>
+								<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								     viewBox="0 0 31.494 31.494" style="enable-background:new 0 0 31.494 31.494;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
+	c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
+	c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"/>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+									<g>
+</g>
+</svg>
+
+							</button><button class="slides-nav__nav next">
+							<?xml version="1.0" encoding="iso-8859-1"?>
+							<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							     viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+	C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+	c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+</svg>
+						</button>
+						</div>
+					</div>
+					<div class="m-right">
+						<div class="m-right__item">
+							<div class="ab-wrap">
+								<div class="ab-wrap__top">
+									<img src="resources/img/animations/ab/ab-top.png" alt="">
+								</div>
+								<div class="ab-wrap__middle">
+									<img src="resources/img/animations/ab/ab-middle.png" alt="">
+									<div class="ab-plus-wrap">
+										<div class="ab-plus">
+											<span>+2%</span>
+											<p>Конверсии</p>
+											<div></div>
+										</div>
+									</div>
+									<div class='ab-wrap__middle-swap'>
+										<img class="" src='resources/img/animations/ab/ab__block1.png' alt="">
+										<div><span>Маркетолог</span></div>
+									</div>
+								</div>
+								<div class="ab-wrap__bottom">
+									<img src="resources/img/animations/ab/ab-bottom.png" alt="">
+									<div class="ab-plus-wrap">
+										<div class="ab-plus">
+											<span>+1%</span>
+											<p>Конверсии</p>
+											<div></div>
+										</div>
+									</div>
+									<div class='ab-wrap__bottom-swap'>
+										<img class="" src='resources/img/animations/ab/ab__block2.png' alt="">
+										<div><span>Маркетолог</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination m-pagination"></div>
+		</div>
+	</section>
+
+	<section class="s-videos">
+		<div class="content">
+			<div class="videos">
+				<h2 class="simple-title simple-title--videos simple-title--height">
+					Почему стоит обратиться <br>
+					именно к нам?
+				<div class="title-height wm_animation" data-animation-type="height" data-animation-duration="1800" data-animation-height="200"></div>
+				</h2>
+				<div class="videos__wrap">
+					<div class="video-item">
+						<div class="video-item__wrap">
+							<div class="video-item__preview">
+								<img src="resources/img/home-page/video/1.png" alt="previe">
+							</div>
+							<p class="video-item__text">
+								Отличие плохого
+								лендинга от хорошего
+							</p>
+							<video class="video video-item__video">
+								<source src="resources/img/home-page/video/333.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+							<img class="video-item__play" src="resources/img/home-page/video/play.png" alt="play">
+						</div>
+					</div>
+					<div class="video-item">
+						<div class="video-item__wrap">
+							<div class="video-item__preview">
+								<img src="resources/img/home-page/video/2.png" alt="previe">
+							</div>
+							<p class="video-item__text">
+								Наш подход к работе
+							</p>
+							<video class="video video-item__video">
+								<source src="resources/img/home-page/video/333.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+							<img class="video-item__play" src="resources/img/home-page/video/play.png" alt="play">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s-tabs">
+		<div class="content">
+			<div class="tabs">
+				<div class="tabs__navigation">
+					<ul class="tabs__nav">
+						<li class="tabs__tab-item active" data-tab="et"><span>Этапы работы</span></li>
+						<li class="tabs__tab-item" data-tab="qu"><span>Вопросы</span></li>
+						<li class="tabs__tab-item" data-tab="our"><span>Наш перфекционизм</span></li>
+						<li class="tabs__tab-item" data-tab="shem"><span>Схема работы</span></li>
+						<li class="tabs__tab-item" data-tab="func"><span>Функционал</span></li>
+						<li class="tabs__tab-item" data-tab="ww"><span>Почему мы?</span></li>
+					</ul>
+				</div>
+				<div class="tabs__content">
+					<div class="tabs__inner tab-etaps et active">
+						<div class="tab-etaps__wrap">
+							<div class="tab-etaps__left">
+								<ul class="tab-etaps__list">
+									<li class="tab-etaps__item">
+										1. Определяем проблемы
+										и ставим цель
+									</li>
+									<li class="tab-etaps__item">
+										2. Подписание договора
+									</li>
+									<li class="tab-etaps__item">
+										3. Создаем прототип
+									</li>
+									<li class="tab-etaps__item">
+										4. Выбор визуализации
+									</li>
+									<li class="tab-etaps__item">
+										5. Техническая визуализация
+									</li>
+									<li class="tab-etaps__item">
+										6. Программирование
+									</li>
+									<li class="tab-etaps__item">
+										7. Наполнение контентом
+									</li>
+									<li class="tab-etaps__item">
+										8. Рекламная компания
+									</li>
+								</ul>
+								<div class="tab-etaps__bottom">
+									<div id="tabs_slider" class="slides-nav">
+										<button class="slides-nav__nav prev">
+											<?xml version="1.0" encoding="iso-8859-1"?>
+											<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+											<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											     viewBox="0 0 31.494 31.494" style="enable-background:new 0 0 31.494 31.494;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
+	c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
+	c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"/>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+</svg>
+
+										</button><button class="slides-nav__nav next">
+											<?xml version="1.0" encoding="iso-8859-1"?>
+											<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+											<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											     viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+	C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+	c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+												<g>
+</g>
+</svg>
+										</button>
+									</div>
+									<div class="tab-etaps__counters">
+										<span class="tab-etaps__current">01</span> /
+										<span class="tab-etaps__total">08</span>
+									</div>
+								</div>
+							</div>
+							<div class="tab-etaps__right">
+								<div class="etaps__slider">
+									<div class="etaps__slider__item">
+										<img src="resources/img/home-page/tabs/4782.png" alt="img">
+										<p class="etaps__slider__text">
+											1 Говорим с клиентом, слушаем, что ему нужнои как мы можем в этом помочь.
+											Говорим с клиентом, слушаем, и как мы можем в этом помочь.
+											Говорим с клиентом, слушаем, что ему нужнчто ему нужно помочь....
+										</p>
+									</div>
+									<div class="etaps__slider__item">
+										<img src="resources/img/home-page/tabs/4782.png" alt="img">
+										<p class="etaps__slider__text">
+											2 Говорим с клиентом, слушаем, что ему нужнои как мы можем в этом помочь.
+											Говорим с клиентом, слушаем, и как мы можем в этом помочь.
+											Говорим с клиентом, слушаем, что ему нужнчто ему нужно помочь....
+										</p>
+									</div>
+									<div class="etaps__slider__item">
+										<img src="resources/img/home-page/tabs/4782.png" alt="img">
+										<p class="etaps__slider__text">
+											3 Говорим с клиентом, слушаем, что ему нужнои как мы можем в этом помочь.
+											Говорим с клиентом, слушаем, и как мы можем в этом помочь.
+											Говорим с клиентом, слушаем, что ему нужнчто ему нужно помочь....
+										</p>
+									</div>
+									<div class="etaps__slider__item">
+										<img src="resources/img/home-page/tabs/4782.png" alt="img">
+										<p class="etaps__slider__text">
+											4 Говорим с клиентом, слушаем, что ему нужнои как мы можем в этом помочь.
+											Говорим с клиентом, слушаем, и как мы можем в этом помочь.
+											Говорим с клиентом, слушаем, что ему нужнчто ему нужно помочь....
+										</p>
+									</div>
+									<div class="etaps__slider__item">
+										<img src="resources/img/home-page/tabs/4782.png" alt="img">
+										<p class="etaps__slider__text">
+											5 Говорим с клиентом, слушаем, что ему нужнои как мы можем в этом помочь.
+											Говорим с клиентом, слушаем, и как мы можем в этом помочь.
+											Говорим с клиентом, слушаем, что ему нужнчто ему нужно помочь....
+										</p>
+									</div>
+									<div class="etaps__slider__item">
+										<img src="resources/img/home-page/tabs/4782.png" alt="img">
+										<p class="etaps__slider__text">
+											6 Говорим с клиентом, слушаем, что ему нужнои как мы можем в этом помочь.
+											Говорим с клиентом, слушаем, и как мы можем в этом помочь.
+											Говорим с клиентом, слушаем, что ему нужнчто ему нужно помочь....
+										</p>
+									</div>
+									<div class="etaps__slider__item">
+										<img src="resources/img/home-page/tabs/4782.png" alt="img">
+										<p class="etaps__slider__text">
+											7 Говорим с клиентом, слушаем, что ему нужнои как мы можем в этом помочь.
+											Говорим с клиентом, слушаем, и как мы можем в этом помочь.
+											Говорим с клиентом, слушаем, что ему нужнчто ему нужно помочь....
+										</p>
+									</div>
+									<div class="etaps__slider__item">
+										<img src="resources/img/home-page/tabs/4782.png" alt="img">
+										<p class="etaps__slider__text">
+											8 Говорим с клиентом, слушаем, что ему нужнои как мы можем в этом помочь.
+											Говорим с клиентом, слушаем, и как мы можем в этом помочь.
+											Говорим с клиентом, слушаем, что ему нужнчто ему нужно помочь....
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs__inner tab-questions qu">
+						Вопросы
+					</div>
+					<div class="tabs__inner tab-perfect our">
+						Наш перфекционизм
+					</div>
+					<div class="tabs__inner tab-shem shem">
+						Схема работы
+					</div>
+					<div class="tabs__inner tab-func func">
+						Функционал
+					</div>
+					<div class="tabs__inner tab-whywe ww">
+						Почему мы?
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s-project-team">
+		<div class="content">
+			<h2 class="simple-title">
+				<span> Команда проекта</span>
+				<div class="title-width wm_animation" data-animation-type="width" data-animation-duration="3000" data-animation-width="1000px"></div>
+			</h2>
+		</div>
+		<div class="proj-team">
+			<div class="proj-team__hidden">
+				<div class="person-skill person-skill--opacyty">
+					<p class="person-skill__title">
+						<img src="resources/img/home-page/team/manager.png" alt="skill">
+						<span>Менеджер</span>
+					</p>
+					<p class="person-skill__text">
+						Отзывы покупателей, сертификаты, награды - каждый элемент,
+						способный повысить доверие
+						потенциального клиента к предприятию, должен присутствовать
+					</p>
+				</div>
+			</div>
+			<div class="proj-team__person person"
+			     style="background-image: url('../../resources/img/home-page/team/Dollarphotoclub_62455928.png')">
+				<div class="person__descript">
+					<div class="person__left">
+						<p class="person__name">Остап</p>
+						<p class="person__position">Маркетолог</p>
+					</div>
+					<div class="person__social">
+						<a href="#">
+							<?xml version="1.0" encoding="iso-8859-1"?>
+							<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+							<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							     width="96.124px" height="96.123px" viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;"
+							     xml:space="preserve">
+<g>
+	<path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
+		c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
+		c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
+		c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"/>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+</svg>
+
+						</a>
+						<a href="">
+							<svg viewBox="0 0 512.00096 512.00096" xmlns="http://www.w3.org/2000/svg"><path d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm-117.40625 395.996094c-77.195312 0-139.996094-62.800782-139.996094-139.996094s62.800782-139.996094 139.996094-139.996094 139.996094 62.800782 139.996094 139.996094-62.800782 139.996094-139.996094 139.996094zm143.34375-246.976563c-22.8125 0-41.367188-18.554687-41.367188-41.367187s18.554688-41.371094 41.367188-41.371094 41.371094 18.558594 41.371094 41.371094-18.558594 41.367187-41.371094 41.367187zm0 0"/><path d="m256 146.019531c-60.640625 0-109.980469 49.335938-109.980469 109.980469 0 60.640625 49.339844 109.980469 109.980469 109.980469 60.644531 0 109.980469-49.339844 109.980469-109.980469 0-60.644531-49.335938-109.980469-109.980469-109.980469zm0 0"/><path d="m399.34375 96.300781c-6.257812 0-11.351562 5.09375-11.351562 11.351563 0 6.257812 5.09375 11.351562 11.351562 11.351562 6.261719 0 11.355469-5.089844 11.355469-11.351562 0-6.261719-5.09375-11.351563-11.355469-11.351563zm0 0"/></svg>
+						</a>
+						<a href="#">
+							<?xml version="1.0" encoding="iso-8859-1"?>
+							<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							     viewBox="0 0 304.36 304.36" style="enable-background:new 0 0 304.36 304.36;" xml:space="preserve">
+<g id="XMLID_1_">
+	<path id="XMLID_807_" style="fill-rule:evenodd;clip-rule:evenodd;" d="M261.945,175.576c10.096,9.857,20.752,19.131,29.807,29.982
+		c4,4.822,7.787,9.798,10.684,15.394c4.105,7.955,0.387,16.709-6.746,17.184l-44.34-0.02c-11.436,0.949-20.559-3.655-28.23-11.474
+		c-6.139-6.253-11.824-12.908-17.727-19.372c-2.42-2.642-4.953-5.128-7.979-7.093c-6.053-3.929-11.307-2.726-14.766,3.587
+		c-3.523,6.421-4.322,13.531-4.668,20.687c-0.475,10.441-3.631,13.186-14.119,13.664c-22.414,1.057-43.686-2.334-63.447-13.641
+		c-17.422-9.968-30.932-24.04-42.691-39.971C34.828,153.482,17.295,119.395,1.537,84.353C-2.01,76.458,0.584,72.22,9.295,72.07
+		c14.465-0.281,28.928-0.261,43.41-0.02c5.879,0.086,9.771,3.458,12.041,9.012c7.826,19.243,17.402,37.551,29.422,54.521
+		c3.201,4.518,6.465,9.036,11.113,12.216c5.142,3.521,9.057,2.354,11.476-3.374c1.535-3.632,2.207-7.544,2.553-11.434
+		c1.146-13.383,1.297-26.743-0.713-40.079c-1.234-8.323-5.922-13.711-14.227-15.286c-4.238-0.803-3.607-2.38-1.555-4.799
+		c3.564-4.172,6.916-6.769,13.598-6.769h50.111c7.889,1.557,9.641,5.101,10.721,13.039l0.043,55.663
+		c-0.086,3.073,1.535,12.192,7.07,14.226c4.43,1.448,7.35-2.096,10.008-4.905c11.998-12.734,20.561-27.783,28.211-43.366
+		c3.395-6.852,6.314-13.968,9.143-21.078c2.096-5.276,5.385-7.872,11.328-7.757l48.229,0.043c1.43,0,2.877,0.021,4.262,0.258
+		c8.127,1.385,10.354,4.881,7.844,12.817c-3.955,12.451-11.65,22.827-19.174,33.251c-8.043,11.129-16.645,21.877-24.621,33.072
+		C252.26,161.544,252.842,166.697,261.945,175.576L261.945,175.576z M261.945,175.576"/>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+								<g>
+</g>
+</svg>
+
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="proj-team__slider team-slider">
+				<div class="team-slider__wrap owl-carousel owl-theme">
+					<div class="person-skill">
+						<p class="person-skill__title">
+							<img src="resources/img/home-page/team/marketing.png" alt="skill">
+							<span>Маркетолог</span>
+						</p>
+						<p class="person-skill__text">
+							Отзывы покупателей, сертификаты, награды - каждый элемент,
+							способный повысить доверие
+							потенциального клиента к предприятию, должен присутствовать
+						</p>
+					</div>
+					<div class="person-skill">
+						<p class="person-skill__title">
+							<img src="resources/img/home-page/team/vector.png" alt="skill">
+							<span>Веб-дизайнер</span>
+						</p>
+						<p class="person-skill__text">
+							Отзывы покупателей, сертификаты, награды - каждый элемент,
+							способный повысить доверие
+							потенциального клиента к предприятию, должен присутствовать
+						</p>
+					</div>
+					<div class="person-skill">
+						<p class="person-skill__title">
+							<img src="resources/img/home-page/team/coding.png" alt="skill">
+							<span>Front-end
+                                разработчиком</span>
+						</p>
+						<p class="person-skill__text">
+							Отзывы покупателей, сертификаты, награды - каждый элемент,
+							способный повысить доверие
+							потенциального клиента к предприятию, должен присутствовать
+						</p>
+					</div>
+					<div class="person-skill">
+						<p class="person-skill__title">
+							<img src="resources/img/home-page/team/marketing.png" alt="skill">
+							<span>Маркетолог</span>
+						</p>
+						<p class="person-skill__text">
+							Отзывы покупателей, сертификаты, награды - каждый элемент,
+							способный повысить доверие
+							потенциального клиента к предприятию, должен присутствовать
+						</p>
+					</div>
+					<div class="person-skill">
+						<p class="person-skill__title">
+							<img src="resources/img/home-page/team/vector.png" alt="skill">
+							<span>Веб-дизайнер</span>
+						</p>
+						<p class="person-skill__text">
+							Отзывы покупателей, сертификаты, награды - каждый элемент,
+							способный повысить доверие
+							потенциального клиента к предприятию, должен присутствовать
+						</p>
+					</div>
+					<div class="person-skill">
+						<p class="person-skill__title">
+							<img src="resources/img/home-page/team/coding.png" alt="skill">
+							<span>Front-end
+                                разработчиком</span>
+						</p>
+						<p class="person-skill__text">
+							Отзывы покупателей, сертификаты, награды - каждый элемент,
+							способный повысить доверие
+							потенциального клиента к предприятию, должен присутствовать
+						</p>
+					</div>
+				</div>
+				<div id="team_slider" class="slides-nav slides-nav--specifics">
+					<button class="slides-nav__nav prev">
+						<?xml version="1.0" encoding="iso-8859-1"?>
+						<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						     viewBox="0 0 31.494 31.494" style="enable-background:new 0 0 31.494 31.494;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
+	c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
+	c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"/>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+</svg>
+
+					</button>
+					<button class="slides-nav__nav next">
+						<?xml version="1.0" encoding="iso-8859-1"?>
+						<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						     viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+	C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+	c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+							<g>
+</g>
+</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s-action"
+	         style="background-image: url('resources/img/home-page/team/actions.png')">
+		<div class="content">
+			<div class="action">
+				<div class="action__content">
+					<p class="simple-title simple-title--black-line simple-title--long">
+						Старый сайт не конвертит? <br>
+						<span>Хотите начать бизнес в интернете?</span>
+					</p>
+					<div class="two-btns">
+						<a href="#" class="btn btn--white active">Сайт не конвертит</a><a href="#"
+						                                                           class="btn btn--white">Нет
+						                                                                                  сайта</a>
+					</div>
+					<p class="action__text">
+						Працюєте на ненависній роботі, а вечорами випікаєте тортики, ліпите з глини
+						чи майструєте щось? Перетворіть ваше хобі на заробіток. Так, це не так складно,
+						як може здатись на перший погляд. близьких смачними тортиками, то чому б не почати з
+						цього робити бізнес. Зараз кондитерська справа є популярною, а для цього навіть не
+						потрібно знімати окреме приміщення. Все можна робити в себе на кухні,
+						так зекономите на оренді.
+					</p>
+					<div class="action__descript">
+                <span>
+                   Акция действует при заказе пакеты
+                </span>
+						<span>"Бизнес"</span>
+					</div>
+				</div>
+				<div class="action__form">
+					<div class="action-form action-form--audit">
+						<div class="action-form__wrap">
+							<p class="action-form__title">
+								Получить бесплатный аудт сайта
+							</p>
+							<form action="" class="action-form__form">
+								<div class="action-form__page-link">
+									<input type="text" name="site" required>
+									<div class="action-form__link">
+										<span>Ссылка на сайт</span>
+										<img src="resources/img/home-page/forms/link.png" alt="link">
+									</div>
+								</div>
+								<input type="email" name="mail" placeholder="E-mail" required>
+								<button type="submit" class="btn btn--order-lending btn--order-package">
+									получить аудит
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s-tarifs">
+		<div class="content">
+			<h2 class="simple-title simple-title--price simple-title--height">
+				Тарифы
+				<div class="title-height wm_animation" data-animation-type="height" data-animation-duration="1800" data-animation-height="300"></div>
+			</h2>
+			<div class="tarifs-wrap">
+				<div class="tarif active">
+					<div class="tarif__wrap">
+						<p class="tarif__title">Индивидуальный</p>
+						<p class="tarif__price">
+							<span class="tarif__num">100 000</span>
+							<span class="tarif__currency"> руб</span>
+						</p>
+						<p class="tarif__weeks">3 недели</p>
+						<p class="tarif__text">Также мы можем предоставить индивидуальный пакет услуг.</p>
+						<button type="submit" class="btn btn--order-lending btn--order-package">
+							Заказать
+						</button>
+					</div>
+				</div>
+				<div class="tarif">
+					<div class="tarif__wrap">
+						<p class="tarif__title">Шаблонный</p>
+						<p class="tarif__price">
+							<span class="tarif__num">100 000</span>
+							<span class="tarif__currency"> руб</span>
+						</p>
+						<p class="tarif__weeks">3 недели</p>
+						<p class="tarif__text">Также мы можем предоставить индивидуальный пакет услуг.</p>
+						<button type="submit" class="btn btn--order-lending btn--order-package">
+							Заказать
+						</button>
+					</div>
+				</div>
+				<div class="tarif">
+					<div class="tarif__wrap">
+						<p class="tarif__title">Оптимальный выбор</p>
+						<p class="tarif__price">
+							<span class="tarif__num">100 000</span>
+							<span class="tarif__currency"> руб</span>
+						</p>
+						<p class="tarif__weeks">3 недели</p>
+						<p class="tarif__text">Также мы можем предоставить индивидуальный пакет услуг.</p>
+						<button type="submit" class="btn btn--order-lending btn--order-package">
+							Заказать
+						</button>
+					</div>
+				</div>
+				<div class="tarif">
+					<div class="tarif__wrap">
+						<p class="tarif__title">Бизнес</p>
+						<p class="tarif__price">
+							<span class="tarif__num">100 000</span>
+							<span class="tarif__currency"> руб</span>
+						</p>
+						<p class="tarif__weeks">3 недели</p>
+						<p class="tarif__text">Также мы можем предоставить индивидуальный пакет услуг.</p>
+						<button type="submit" class="btn btn--order-lending btn--order-package">
+							Заказать
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="list-services">
+				<table class="list-services__table">
+					<thead>
+					<tr>
+						<td>Список услуг</td>
+						<td>Для старта</td>
+						<td>Для малого бизнеса</td>
+						<td>Для компаний</td>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td><span>Online-chat</span> <img src="resources/img/home-page/tarifs/2.png" alt="">
+						</td>
+						<td><img src="resources/img/home-page/tarifs/red.png" alt=""></td>
+						<td><img src="resources/img/home-page/tarifs/red.png" alt=""></i></td>
+						<td><img src="resources/img/home-page/tarifs/red.png" alt=""></i></td>
+					</tr>
+					<tr>
+						<td><span>Бот для мессенджеров</span> <img src="resources/img/home-page/tarifs/2.png"
+						                                           alt=""></td>
+						<td><img src="resources/img/home-page/tarifs/red.png" alt=""></td>
+						<td><img src="resources/img/home-page/tarifs/red.png" alt=""></td>
+						<td><img src="resources/img/home-page/tarifs/red.png" alt=""></td>
+					</tr>
+					<tr>
+						<td><span> Отправка медиафайлов</span> <img src="resources/img/home-page/tarifs/2.png"
+						                                            alt=""></td>
+						<td><img src="resources/img/home-page/tarifs/grey.png"></td>
+						<td><img src="resources/img/home-page/tarifs/red.png"></td>
+						<td><img src="resources/img/home-page/tarifs/red.png"></td>
+					</tr>
+					<tr>
+						<td><span>Рассылки</span> <img src="resources/img/home-page/tarifs/2.png" alt=""></td>
+						<td><img src="resources/img/home-page/tarifs/grey.png"></td>
+						<td><img src="resources/img/home-page/tarifs/grey.png"></td>
+						<td><img src="resources/img/home-page/tarifs/red.png"></td>
+					</tr>
+					<tr>
+						<td><span>Инструменты оператора</span> <img src="resources/img/home-page/tarifs/2.png"
+						                                            alt=""></td>
+						<td><img src="resources/img/home-page/tarifs/grey.png"></td>
+						<td><img src="resources/img/home-page/tarifs/grey.png"></td>
+						<td><img src="resources/img/home-page/tarifs/red.png"></td>
+					</tr>
+					<tr>
+						<td><span>Работа с API</span> <img src="resources/img/home-page/tarifs/2.png" alt="">
+						</td>
+						<td><img src="resources/img/home-page/tarifs/grey.png"></td>
+						<td><img src="resources/img/home-page/tarifs/grey.png"></td>
+						<td><img src="resources/img/home-page/tarifs/red.png"></td>
+					</tr>
+					<tr>
+						<td><span>Управление командой</span> <img src="resources/img/home-page/tarifs/2.png"
+						                                          alt=""></td>
+						<td><img src="resources/img/home-page/tarifs/grey.png"></td>
+						<td><img src="resources/img/home-page/tarifs/grey.png"></td>
+						<td><img src="resources/img/home-page/tarifs/red.png"></td>
+					</tr>
+					<tr>
+						<td><span>Автоматическое обучение</span> <img src="resources/img/home-page/tarifs/2.png"
+						                                              alt=""></td>
+						<td><img src="resources/img/home-page/tarifs/grey.png"></td>
+						<td><img src="resources/img/home-page/tarifs/grey.png"></td>
+						<td><img src="resources/img/home-page/tarifs/red.png"></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<section class="s-what-get">
+		<div class="content">
+			<h2 class="simple-title simple-title--what simple-title--height">
+				Что вы получите ?
+				<div class="title-height wm_animation" data-animation-type="height" data-animation-duration="1800" data-animation-height="300"></div>
+		</h2>
+			<div class="what-get">
+				<div class="what-get__wrap">
+					<div class="what-get__item">
+						<div class="what-get__number">01</div>
+						<span class="what-get__circle"></span>
+						<p class="what-get__text">
+							Команду из
+							5 профессионалов
+						</p>
+					</div>
+					<div class="what-get__item">
+						<div class="what-get__number">02</div>
+						<span class="what-get__circle"></span>
+						<p class="what-get__text">
+							Скидку 5% за каждый
+							просроченый день
+						</p>
+					</div>
+					<div class="what-get__item">
+						<div class="what-get__number">03</div>
+						<span class="what-get__circle"></span>
+						<p class="what-get__text">
+							Конверсию <br>
+							сайта 5-15%
+						</p>
+					</div>
+					<div class="what-get__item">
+						<div class="what-get__number">04</div>
+						<span class="what-get__circle"></span>
+						<p class="what-get__text">
+							Мощный <br>
+							инструмент продаж
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s-portfolio">
+		<div class="content">
+			<h2 class="simple-title simple-title--height">
+				Портфолио
+				<div class="title-height wm_animation" data-animation-type="height" data-animation-duration="1800" data-animation-height="200"></div>
+			</h2>
+		</div>
+		<div class="portfolio">
+			<a href="#" class="portfolio__item wm_animation" data-animation-type="fall" data-animation-duration="1000">
+
+				<div class="portfolio__text">
+					<div class="portfolio__title">
+						психологический центр
+					</div>
+					<ul class="portfolio__ul">
+						<li>
+							Конверсия сайта:<span>5-10%.</span>
+						</li>
+						<li>
+							Стоимость за клик: <span>25 руб.</span>
+						</li>
+						<li>
+							Столимость заявки: <span>60 руб.</span>
+						</li>
+						<li>
+							Сроки исполнения: <span>14 дней.</span>
+						</li>
+					</ul>
+				</div>
+				<img src="resources/img/portfolio/1.png" alt="">
+			</a>
+			<a href="#" class="portfolio__item wm_animation" data-animation-type="fall" data-animation-duration="1500">
+				<div class="portfolio__text">
+					<div class="portfolio__title">
+						психологический центр
+					</div>
+					<ul class="portfolio__ul">
+						<li>
+							Конверсия сайта:<span>5-10%.</span>
+						</li>
+						<li>
+							Стоимость за клик: <span>25 руб.</span>
+						</li>
+						<li>
+							Столимость заявки: <span>60 руб.</span>
+						</li>
+						<li>
+							Сроки исполнения: <span>14 дней.</span>
+						</li>
+					</ul>
+				</div>
+				<img src="resources/img/portfolio/2.png" alt="">
+			</a>
+			<a href="#" class="portfolio__item wm_animation" data-animation-type="fall" data-animation-duration="2000">
+				<div class="portfolio__text">
+					<div class="portfolio__title">
+						психологический центр
+					</div>
+					<ul class="portfolio__ul">
+						<li>
+							Конверсия сайта:<span>5-10%.</span>
+						</li>
+						<li>
+							Стоимость за клик: <span>25 руб.</span>
+						</li>
+						<li>
+							Столимость заявки: <span>60 руб.</span>
+						</li>
+						<li>
+							Сроки исполнения: <span>14 дней.</span>
+						</li>
+					</ul>
+				</div>
+				<img src="resources/img/portfolio/3.png" alt="">
+			</a>
+			<a href="#" class="portfolio__item wm_animation" data-animation-type="fall" data-animation-duration="2500">
+				<div class="portfolio__text">
+					<div class="portfolio__title">
+						психологический центр
+					</div>
+					<ul class="portfolio__ul">
+						<li>
+							Конверсия сайта:<span>5-10%.</span>
+						</li>
+						<li>
+							Стоимость за клик: <span>25 руб.</span>
+						</li>
+						<li>
+							Столимость заявки: <span>60 руб.</span>
+						</li>
+						<li>
+							Сроки исполнения: <span>14 дней.</span>
+						</li>
+					</ul>
+				</div>
+				<img src="resources/img/portfolio/4.png" alt="">
+			</a>
+		</div>
+	</section>
+
+	<section class="s-comments">
+		<div class="content">
+			<h2 class="simple-title">
+				Отзывы клиентов, <br>
+				которые стали нашими партнерами
+				<div class="title-width wm_animation" data-animation-type="width" data-animation-duration="3000" data-animation-width="1000px"></div>
+			</h2>
+			<div class="video-comments-slider swiper-container">
+				<div class="videos__wrap video-comments-slider__wrap swiper-wrapper">
+					<div class="video-item video-item--comment swiper-slide">
+						<div class="video-item__oh">
+							<div class="video-item__wrap">
+								<div class="video-item__preview">
+									<img src="resources/img/home-page/coments/1.png" alt="previe">
+								</div>
+								<div class="video-item__text">
+									<p class="video-item__name">Марина Викторовна </p>
+									<p class="video-item__pos">Оптовые закупки бензина
+									                           по всей России </p>
+								</div>
+								<video class="video video-item__video">
+									<source src="resources/img/home-page/video/333.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+								<img class="video-item__play" src="resources/img/home-page/video/play.png"
+								     alt="play">
+							</div>
+						</div>
+						<p class="video-item__descript">
+							Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+							Тогда решение «Быстрый старт» от нашей командывам подходит.
+							Тогда решение «Быстрый старт» от нашей команды
+							+Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+							Тогда решение «Быстрый старт» от нашей командывам подходит.
+							Тогда решение «Быстрый старт» от нашей команды
+						</p>
+						<button class="srpead js-spread-comment">Развернуть</button>
+					</div>
+					<div class="video-item video-item--comment swiper-slide">
+						<div class="video-item__oh">
+							<div class="video-item__wrap">
+								<div class="video-item__preview">
+									<img src="resources/img/home-page/coments/2.png" alt="previe">
+								</div>
+								<div class="video-item__text">
+									<p class="video-item__name">Марина Викторовна </p>
+									<p class="video-item__pos">Оптовые закупки бензина
+									                           по всей России </p>
+								</div>
+								<video class="video video-item__video">
+									<source src="resources/img/home-page/video/333.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+								<img class="video-item__play" src="resources/img/home-page/video/play.png"
+								     alt="play">
+							</div>
+						</div>
+						<p class="video-item__descript">
+							Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+							Тогда решение «Быстрый старт» от нашей командывам подходит.
+							Тогда решение «Быстрый старт» от нашей команды
+							+Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+							Тогда решение «Быстрый старт» от нашей командывам подходит.
+							Тогда решение «Быстрый старт» от нашей команды
+						</p>
+						<button class="srpead js-spread-comment">Развернуть</button>
+					</div>
+					<div class="video-item video-item--comment swiper-slide">
+						<div class="video-item__oh">
+							<div class="video-item__wrap">
+								<div class="video-item__preview">
+									<img src="resources/img/home-page/coments/1.png" alt="previe">
+								</div>
+								<div class="video-item__text">
+									<p class="video-item__name">Марина Викторовна </p>
+									<p class="video-item__pos">Оптовые закупки бензина
+									                           по всей России </p>
+								</div>
+								<video class="video video-item__video">
+									<source src="resources/img/home-page/video/333.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+								<img class="video-item__play" src="resources/img/home-page/video/play.png"
+								     alt="play">
+							</div>
+						</div>
+						<p class="video-item__descript">
+							Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+							Тогда решение «Быстрый старт» от нашей командывам подходит.
+							Тогда решение «Быстрый старт» от нашей команды
+							+Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+							Тогда решение «Быстрый старт» от нашей командывам подходит.
+							Тогда решение «Быстрый старт» от нашей команды
+						</p>
+						<button class="srpead js-spread-comment">Развернуть</button>
+					</div>
+					<div class="video-item video-item--comment swiper-slide">
+						<div class="video-item__oh">
+							<div class="video-item__wrap">
+								<div class="video-item__preview">
+									<img src="resources/img/home-page/coments/2.png" alt="previe">
+								</div>
+								<div class="video-item__text">
+									<p class="video-item__name">Марина Викторовна </p>
+									<p class="video-item__pos">Оптовые закупки бензина
+									                           по всей России </p>
+								</div>
+								<video class="video video-item__video">
+									<source src="resources/img/home-page/video/333.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+								<img class="video-item__play" src="resources/img/home-page/video/play.png"
+								     alt="play">
+							</div>
+						</div>
+						<p class="video-item__descript">
+							Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+							Тогда решение «Быстрый старт» от нашей командывам подходит.
+							Тогда решение «Быстрый старт» от нашей команды
+							+Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+							Тогда решение «Быстрый старт» от нашей командывам подходит.
+							Тогда решение «Быстрый старт» от нашей команды
+						</p>
+						<button class="srpead js-spread-comment">Развернуть</button>
+					</div>
+					<div class="video-item video-item--comment swiper-slide">
+						<div class="video-item__oh">
+							<div class="video-item__wrap">
+								<div class="video-item__preview">
+									<img src="resources/img/home-page/coments/1.png" alt="previe">
+								</div>
+								<div class="video-item__text">
+									<p class="video-item__name">Марина Викторовна </p>
+									<p class="video-item__pos">Оптовые закупки бензина
+									                           по всей России </p>
+								</div>
+								<video class="video video-item__video">
+									<source src="resources/img/home-page/video/333.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+								<img class="video-item__play" src="resources/img/home-page/video/play.png"
+								     alt="play">
+							</div>
+						</div>
+						<p class="video-item__descript">
+							Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+							Тогда решение «Быстрый старт» от нашей командывам подходит.
+							Тогда решение «Быстрый старт» от нашей команды
+							+Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+							Тогда решение «Быстрый старт» от нашей командывам подходит.
+							Тогда решение «Быстрый старт» от нашей команды
+						</p>
+						<button class="srpead js-spread-comment">Развернуть</button>
+					</div>
+					<div class="video-item video-item--comment swiper-slide">
+						<div class="video-item__oh">
+							<div class="video-item__wrap">
+								<div class="video-item__preview">
+									<img src="resources/img/home-page/coments/2.png" alt="previe">
+								</div>
+								<div class="video-item__text">
+									<p class="video-item__name">Марина Викторовна </p>
+									<p class="video-item__pos">Оптовые закупки бензина
+									                           по всей России </p>
+								</div>
+								<video class="video video-item__video">
+									<source src="resources/img/home-page/video/333.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+								<img class="video-item__play" src="resources/img/home-page/video/play.png"
+								     alt="play">
+							</div>
+						</div>
+						<p class="video-item__descript">
+							Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+							Тогда решение «Быстрый старт» от нашей командывам подходит.
+							Тогда решение «Быстрый старт» от нашей команды
+							+Тогда решение «Быстрый старт» от нашей команды идеально вам подходит.
+							Тогда решение «Быстрый старт» от нашей командывам подходит.
+							Тогда решение «Быстрый старт» от нашей команды
+						</p>
+						<button class="srpead js-spread-comment">Развернуть</button>
+					</div>
+				</div>
+			</div>
+			<div id="comments_slider" class="slides-nav slides-nav--comments">
+				<button class="slides-nav__nav prev">
+					<?xml version="1.0" encoding="iso-8859-1"?>
+					<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					     viewBox="0 0 31.494 31.494" style="enable-background:new 0 0 31.494 31.494;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
+	c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
+	c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"/>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+</svg>
+
+				</button><button class="slides-nav__nav next">
+					<?xml version="1.0" encoding="iso-8859-1"?>
+					<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					     viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+	C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+	c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+</svg>
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="s-usefully">
+		<div class="content">
+			<h2 class="simple-title simple-title--usefull simple-title--height">
+				РАБОТАЕМ НЕ СО ВСЕМИ И НЕ ДЛЯ ВСЕХ ПОЛЕЗНЫ
+				<div class="title-height wm_animation" data-animation-type="height" data-animation-duration="1800" data-animation-height="300"></div>
+			</h2>
+			<div class="usefully">
+				<div class="usefully__wrap">
+					<div class="usefully__item"
+					     style="background-image: url('resources/img/home-page/usefully/1.png')">
+						<p class="usefully__title"><span>С кем мы не работаем:</span></p>
+						<ul class="usefully__ul">
+							<li class="usefully__li"> B2B НА СЛОЖНЫХ РЫНКАХ - НЕТ</li>
+							<li class="usefully__li"> СТАРТАПЫ - НЕТ</li>
+							<li class="usefully__li"> ИНТЕРНЕТ-МАГАЗИНЫ - НЕТ</li>
+						</ul>
+					</div>
+					<div class="usefully__item usefully__item--done"
+					     style="background-image: url('resources/img/home-page/usefully/2.png')">
+						<p class="usefully__title"><span>C кем мы работаем:</span></p>
+						<ul class="usefully__ul">
+							<li class="usefully__li"> РОЗНИЦА - ДА</li>
+							<li class="usefully__li"> УСЛУГИ - ДА</li>
+							<li class="usefully__li">ОПТОВАЯ ТОРГОВЛЯ - ДА</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s-garants">
+		<div class="content">
+			<div class="garants">
+				<div class="garants__wrap">
+					<div class="garants-item">
+						<p class="garants-item__title">
+							<img src="resources/img/home-page/garants/1.svg" alt="item">
+							<span>Хитрый договор</span>
+						</p>
+						<p class="garants-item__text">
+							Тогда решение «Быстрый
+							старт» от нашей команды
+							идеально вам подходит.
+							Опираясь на многолетний
+							Тогда решение «Быстрый
+							старт» от нашей команды
+							идеально вам подходит.
+							Опираясь на многолетний
+						</p>
+						<button class="srpead js-spread-garants">Развернуть</button>
+					</div>
+					<div class="garants-item">
+						<p class="garants-item__title">
+							<img src="resources/img/home-page/garants/2.svg" alt="item">
+							<span>Псевдоконверсия</span>
+						</p>
+						<p class="garants-item__text">
+							Тогда решение «Быстрый
+							старт» от нашей команды
+							идеально вам подходит.
+							Опираясь на многолетний
+							Тогда решение «Быстрый
+							старт» от нашей команды
+							идеально вам подходит.
+							Опираясь на многолетний
+						</p>
+						<button class="srpead js-spread-garants">Развернуть</button>
+					</div>
+					<div class="garants-item">
+						<p class="garants-item__title">
+							<img src="resources/img/home-page/garants/3.svg" alt="item">
+							<span>Поток холодных клиентов </span>
+						</p>
+						<p class="garants-item__text">
+							Тогда решение «Быстрый
+							старт» от нашей команды
+							идеально вам подходит.
+							Опираясь на многолетний
+							Тогда решение «Быстрый
+							старт» от нашей команды
+							идеально вам подходит.
+							Опираясь на многолетний
+						</p>
+						<button class="srpead js-spread-garants">Развернуть</button>
+					</div>
+				</div>
+				<div class="garants__right">
+					<p class="garants__title simple-title">Гарантии</p>
+					<p class="garants__text">
+						Будем с вами честны, гарантий
+						не существует - студии
+						искусственно могут оправдать
+						свои мнимые обещания.
+					</p>
+					<p class="garants__link">
+						Вы можете посмотреть нашу
+						<a href="#">страничку доверия</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s-action s-action--bottom"
+	         style="background-image: url('resources/img/home-page/garants/bg.png')">
+		<div class="content">
+			<div class="action">
+				<div class="action__content">
+					<p class="simple-title simple-title--black-line simple-title--long">
+						<span>Вы ещё сомневаетесь?</span>
+					</p>
+					<p class="action__subtitle">
+						Давайте мы попробуем, бла бла бла бла, <br>
+						мы вас уверяем, что всё будет окей, пока
+						вы думаете, ваши конкуренты уже получают
+						заявки с сайтов!
+					</p>
+				</div>
+				<div class="action__form">
+					<div class="action-form action-form--secondary">
+						<div class="action-form__wrap">
+							<p class="action-form__title">
+								Оставьте заявку
+							</p>
+							<p class="action-form__subtitle">
+								и мы свяжемся с Вами!
+							</p>
+							<form action="" class="action-form__form">
+								<div class="action-form__reply">
+									<p class="action-form__reply-text">
+										Куда вам ответить?
+									</p>
+									<div class="action-form__reply-icons">
+										<label>
+											<input checked type="radio" value="mail" name="n">
+											<i class="icon-envelope"></i>
+										</label>
+										<label>
+											<input type="radio" value="whatsapp" name="n">
+											<i class="icon-whatsapp"></i>
+										</label>
+										<label>
+											<input type="radio" value="telegram" name="n">
+											<i class="icon-telegram"></i>
+										</label>
+									</div>
+								</div>
+								<input type="text" name="name" required placeholder="Имя">
+								<input type="tel" name="phone" placeholder="Телефон">
+								<div class="action-form__bottom">
+									<div class="action-form__message">
+										<span class="action-form__plus">+</span>
+										<span class="action-form__text">
+                          Сообщение
+                        </span>
+									</div>
+									<label class="action-form__file">
+										<input type="file">
+										<img src="resources/img/home-page/forms/clip.png" alt="file">
+										<span class="action-form__text">Прикрепиить файл</span>
+									</label>
+								</div>
+								<textarea class="action-form__textarea" name="formMessage"></textarea>
+								<button type="submit" class="btn btn--order-lending btn--order-package">
+									заказать пакет
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="content">
+			<div class="footer__wrap">
+				<div class="footer__logo-side">
+					<a class="footer__logo" href="/">
+						<img src="resources/img/home-page/Point73.png" alt="logo">
+					</a>
+					<p>
+						Говорим с клиентом, слушаем, что ему нужнои как мы можем в
+						этом помочь. Говорим с клиентом, слушаем, и как мы можем в этом помочь. Говорим
+						с клиентом, слушаем, что ему нужнчто ему нужно помочь....
+					</p>
+					<div class="langs">
+						<a href="#"><img src="resources/img/home-page/langs/r.png" alt="ru"></a>
+						<a href="#"><img src="resources/img/home-page/langs/united-kingdom.png" alt="en"></a>
+						<a class="active" href="#"><img src="resources/img/home-page/langs/ukraine.png"
+						                                alt="ua"></a>
+					</div>
+
+				</div>
+				<div class="footer__right-side">
+					<div class="footer__right-top">
+						<nav class="f-nav">
+							<div class="f-title">Меню</div>
+							<ul class="f-nav__list">
+								<li class="active"><a href="#">Главная</a></li>
+								<li><a href="#">О нас</a></li>
+								<li><a href="#">Услуги</a></li>
+								<li><a href="#">Портфолио</a></li>
+								<li><a href="#">Отзывы</a></li>
+							</ul>
+						</nav>
+						<nav class="f-nav f-nav--favours">
+							<div class="f-title">Услуги</div>
+							<ul class="f-nav__list">
+								<li class="active"><a href="#">About Singleton</a></li>
+								<li><a href="#">Jobs</a></li>
+								<li><a href="#">Team</a></li>
+								<li><a href="#">Testimonials</a></li>
+								<li><a href="#">Blog</a></li>
+							</ul>
+						</nav>
+						<div class="footer__contacts">
+							<div class="contacts">
+								<div class="f-title">Контакты</div>
+								<ul class="contacts__list">
+									<li>
+										<img src="resources/img/home-page/messangers/mes.png" alt="">
+										<a href="mailto:timofei.web@gmail.com">timofei.web@gmail.com</a>
+									</li>
+									<li>
+										<img src="resources/img/home-page/messangers/phone.png" alt="">
+										<a href="tel:+380969084855">+38 (096) 908-48-55</a>
+									</li>
+								</ul>
+							</div>
+							<div class="messengers">
+								<div class="f-title">Мессенджеры</div>
+								<div class="messengers__wrap">
+									<a class="social__item fb" href="#"><?xml version="1.0"?>
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+										     version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px"
+										     viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;"
+										     xml:space="preserve"><g><g>
+	<path
+		d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803   c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654   c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246   c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"
+		data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
+</g></g> </svg>
+									</a>
+									<a class="social__item vk" href="#"><?xml version="1.0"?>
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 304.36 304.36" style="enable-background:new 0 0 304.36 304.36;" xml:space="preserve" width="512px" height="512px"><g><g id="XMLID_1_">
+	<path id="XMLID_807_" d="M261.945,175.576c10.096,9.857,20.752,19.131,29.807,29.982   c4,4.822,7.787,9.798,10.684,15.394c4.105,7.955,0.387,16.709-6.746,17.184l-44.34-0.02c-11.436,0.949-20.559-3.655-28.23-11.474   c-6.139-6.253-11.824-12.908-17.727-19.372c-2.42-2.642-4.953-5.128-7.979-7.093c-6.053-3.929-11.307-2.726-14.766,3.587   c-3.523,6.421-4.322,13.531-4.668,20.687c-0.475,10.441-3.631,13.186-14.119,13.664c-22.414,1.057-43.686-2.334-63.447-13.641   c-17.422-9.968-30.932-24.04-42.691-39.971C34.828,153.482,17.295,119.395,1.537,84.353C-2.01,76.458,0.584,72.22,9.295,72.07   c14.465-0.281,28.928-0.261,43.41-0.02c5.879,0.086,9.771,3.458,12.041,9.012c7.826,19.243,17.402,37.551,29.422,54.521   c3.201,4.518,6.465,9.036,11.113,12.216c5.142,3.521,9.057,2.354,11.476-3.374c1.535-3.632,2.207-7.544,2.553-11.434   c1.146-13.383,1.297-26.743-0.713-40.079c-1.234-8.323-5.922-13.711-14.227-15.286c-4.238-0.803-3.607-2.38-1.555-4.799   c3.564-4.172,6.916-6.769,13.598-6.769h50.111c7.889,1.557,9.641,5.101,10.721,13.039l0.043,55.663   c-0.086,3.073,1.535,12.192,7.07,14.226c4.43,1.448,7.35-2.096,10.008-4.905c11.998-12.734,20.561-27.783,28.211-43.366   c3.395-6.852,6.314-13.968,9.143-21.078c2.096-5.276,5.385-7.872,11.328-7.757l48.229,0.043c1.43,0,2.877,0.021,4.262,0.258   c8.127,1.385,10.354,4.881,7.844,12.817c-3.955,12.451-11.65,22.827-19.174,33.251c-8.043,11.129-16.645,21.877-24.621,33.072   C252.26,161.544,252.842,166.697,261.945,175.576L261.945,175.576z M261.945,175.576" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
+</g></g> </svg>
+									</a>
+									<a class="social__item wp" href="#"><?xml version="1.0"?>
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px"><g><g>
+	<g>
+		<path d="M256.064,0h-0.128C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104l98.4-31.456    C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z M405.024,361.504    c-6.176,17.44-30.688,31.904-50.24,36.128c-13.376,2.848-30.848,5.12-89.664-19.264C189.888,347.2,141.44,270.752,137.664,265.792    c-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624,26.176-62.304c6.176-6.304,16.384-9.184,26.176-9.184    c3.168,0,6.016,0.16,8.576,0.288c7.52,0.32,11.296,0.768,16.256,12.64c6.176,14.88,21.216,51.616,23.008,55.392    c1.824,3.776,3.648,8.896,1.088,13.856c-2.4,5.12-4.512,7.392-8.288,11.744c-3.776,4.352-7.36,7.68-11.136,12.352    c-3.456,4.064-7.36,8.416-3.008,15.936c4.352,7.36,19.392,31.904,41.536,51.616c28.576,25.44,51.744,33.568,60.032,37.024    c6.176,2.56,13.536,1.952,18.048-2.848c5.728-6.176,12.8-16.416,20-26.496c5.12-7.232,11.584-8.128,18.368-5.568    c6.912,2.4,43.488,20.48,51.008,24.224c7.52,3.776,12.48,5.568,14.304,8.736C411.2,329.152,411.2,344.032,405.024,361.504z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
+	</g>
+</g></g> </svg>
+									</a>
+									<a class="social__item te" href="#"><?xml version="1.0"?>
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" width="512px" height="512px"><g><g id="XMLID_496_">
+	<path id="XMLID_497_" d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412   c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22   c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207   c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146   c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
+</g></g> </svg>
+									</a>
+									<a class="social__item vb" href="#">
+										<?xml version="1.0" encoding="utf-8"?>
+										<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E5E5E5;}
+	.st1{fill:#665CAC;}
+</style>
+											<g>
+	<polygon class="st0" points="209.6,183.8 217.9,175.5 217.9,175.5 209.6,183.8 	"/>
+
+												<rect x="292.2" y="264.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -99.469 288.2295)" class="st0" width="11.9" height="0"/>
+</g>
+											<path class="st1" d="M307.2,0H204.8C106,0,25.6,80.4,25.6,179.2V256c0,69.4,40,132.3,102.4,162v85.5c0,7.4,9.3,11.3,14.6,6
+	l74.3-74.3h90.3c98.8,0,179.2-80.4,179.2-179.2v-76.8C486.4,80.4,406,0,307.2,0z M273.1,128c-2.5,0-5.1,0.1-7.6,0.4
+	c-4.7,0.5-8.9-2.9-9.4-7.5c-0.5-4.7,2.9-8.9,7.5-9.4c3.1-0.3,6.3-0.5,9.5-0.5c47.1,0,85.3,38.3,85.3,85.3c0,3.2-0.2,6.3-0.5,9.5
+	c-0.5,4.6-4.8,8.1-9.4,7.5c-4.6-0.5-8.1-4.8-7.5-9.4c0.3-2.5,0.4-5.1,0.4-7.6C341.3,158.6,310.7,128,273.1,128z M324.3,196.3
+	c0,4.6-3.9,8.5-8.5,8.5c-4.7,0-8.5-3.9-8.5-8.5c0-18.8-15.3-34.1-34.1-34.1c-4.7,0-8.5-3.8-8.5-8.5c0-4.7,3.8-8.5,8.5-8.5
+	C301.3,145.1,324.3,168.1,324.3,196.3z M384.8,321.5c-2.5,11-8,21-16,29c-10.9,10.9-25.7,16.5-43.4,16.5c-4.7,0-9.7-0.4-14.8-1.2
+	c-40.8-6.4-97.6-26.4-134.6-63.3l-0.5-0.5c-36.9-37-56.9-93.8-63.3-134.6c-3.8-24.3,1.5-44.4,15.3-58.2c8-8,18-13.5,29-16
+	c1.1-0.3,2.3-0.3,3.4-0.1l41.6,7.7c3.4,0.6,6.1,3.3,6.8,6.7l12.1,60.3c0.6,2.8-0.3,5.7-2.3,7.7l-24.4,24.4
+	c20.2,43.1,43.1,66.1,84.4,84.6l24.5-24.5c2-2,4.9-2.9,7.7-2.3l60.3,12.1c3.4,0.7,6.1,3.4,6.7,6.8l7.7,41.6
+	C385.1,319.2,385,320.4,384.8,321.5z M389.4,223.9c-1.1,4.6-6,7.5-10.6,6.3c-4.4-1.2-7.1-5.8-6-10.2c1.8-7.7,2.7-15.7,2.7-23.6
+	c0-56.5-45.9-102.4-102.4-102.4c-2.6,0-5.3,0.1-7.9,0.3c-4.7,0.4-8.8-3.2-9.2-7.9c-0.4-4.7,3.2-8.8,7.9-9.2c3-0.2,6.1-0.3,9.2-0.3
+	c65.9,0,119.5,53.6,119.5,119.5C392.6,205.6,391.5,214.9,389.4,223.9z"/>
+</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__right-bottom">
+
+					</div>
+				</div>
+			</div>
+			<div class="footer__subscribe">
+				<div class="subscribe">
+					<p>Подписаться на рассылку</p>
+					<form action="">
+						<div class="subscribe__input">
+							<input type="email" name="email" required>
+							<span>E-mail</span>
+						</div>
+						<button class="btn btn--subsr">подписаться</button>
+					</form>
+				</div>
+				<div class="footer__text">
+					<div class="f-title">Подписаться на рассылку</div>
+					<div>
+						<p>
+							Говорим с клиентом, слушаем, что ему нужнои как мы можем в этом помочь.
+							Говорим с клиентом, слушаем, и как мы можем в этом помочь.
+						</p>
+						<p>
+							Говорим с клиентом, слушаем, что ему нужнои как мы можем в этом помочь.
+							Говорим с клиентом, слушаем, и как мы можем в этом помочь.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="footer__rights">
+				© 2005 – 2019 &nbsp; Все права защищены. Копирование контента / дизайна преследуется
+				законом.
+			</div>
+		</div>
+	</footer>
+</div>
+<div class="up js-to-top">
+	<img class="up__img" src="resources/img/home-page/up.png">
+	<p>Вверх</p>
+</div>
+
+<!--add class show to see element-->
+<div class="popup-thanks">
+	<img src="resources/img/map/close-popup.png" class="js-thanks-close"/>
+	<div class="popup-thanks__wrap">
+		<h4>Благодарим вас!</h4>
+		<p>наш менеджер свяжется с Вами в скором времени.</p>
+	</div>
+</div>
+
+<div class="popup-order"
+     style="background-image: url('./resources/img/map/popup-order.png')">
+	<img src="resources/img/map/close-popup.png" class="js-popup-order-close"/>
+	<div class="popup-order__wrap">
+		<div class="popup-order__content">
+			<div class="popup-order__text">
+				<h4>
+					<span>Оставьте заявку</span>
+				</h4>
+				<p>и мы свяжемся с Вами!</p>
+			</div>
+			<div class="action-form">
+				<div class="action-form__wrap">
+					<form action="" class="action-form__form">
+						<div class="action-form__reply">
+							<p class="action-form__reply-text">
+								Куда вам ответить?
+							</p>
+							<div class="action-form__reply-icons">
+								<label>
+									<input checked type="radio" value="mail" name="n">
+									<i class="icon-envelope"></i>
+								</label>
+								<label>
+									<input type="radio" value="whatsapp" name="n">
+									<i class="icon-whatsapp"></i>
+								</label>
+								<label>
+									<input type="radio" value="telegram" name="n">
+									<i class="icon-telegram"></i>
+								</label>
+							</div>
+						</div>
+						<input type="text" name="name" required placeholder="Имя">
+						<input type="tel" name="phone" placeholder="Телефон">
+						<div class="action-form__bottom">
+							<div class="action-form__message">
+								<span class="action-form__plus">+</span>
+								<span class="action-form__text">
+                          Сообщение
+                        </span>
+							</div>
+							<label class="action-form__file">
+								<input type="file">
+								<img src="resources/img/home-page/forms/clip.png" alt="file">
+								<span class="action-form__text">Прикрепиить файл</span>
+							</label>
+						</div>
+						<textarea class="action-form__textarea" name="formMessage"></textarea>
+						<button type="submit" class="btn btn--order-lending btn--order-package">
+							заказать пакет
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup-order popup-order--secondary"
+     style="background-image: url('./resources/img/map/popup-order2.png')">
+	<img src="resources/img/map/close-popup.png" class="js-popup-order-sec-close"/>
+	<div class="popup-order__wrap">
+		<div class="popup-order__content">
+			<div class="popup-order__text">
+				<h4>
+					<span>Оставьте заявку</span>
+				</h4>
+				<p>и мы свяжемся с Вами!</p>
+			</div>
+			<div class="action-form">
+				<div class="action-form__wrap">
+					<form action="" class="action-form__form">
+						<div class="action-form__reply">
+							<p class="action-form__reply-text">
+								Куда вам ответить?
+							</p>
+							<div class="action-form__reply-icons">
+								<label>
+									<input checked type="radio" value="mail" name="n">
+									<i class="icon-envelope"></i>
+								</label>
+								<label>
+									<input type="radio" value="whatsapp" name="n">
+									<i class="icon-whatsapp"></i>
+								</label>
+								<label>
+									<input type="radio" value="telegram" name="n">
+									<i class="icon-telegram"></i>
+								</label>
+							</div>
+						</div>
+						<input type="text" name="name" required placeholder="Имя">
+						<input type="tel" name="phone" placeholder="Телефон">
+						<div class="action-form__bottom">
+							<div class="action-form__message">
+								<span class="action-form__plus">+</span>
+								<span class="action-form__text">
+                          Сообщение
+                        </span>
+							</div>
+							<label class="action-form__file">
+								<input type="file">
+								<img src="resources/img/home-page/forms/clip.png" alt="file">
+								<span class="action-form__text">Прикрепиить файл</span>
+							</label>
+						</div>
+						<textarea class="action-form__textarea" name="formMessage"></textarea>
+						<button type="submit" class="btn btn--order-lending btn--order-package">
+							заказать пакет
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="menu-hidden">
+	<div class="menu-hidden__wrap">
+		<div class="menu-hidden__left">
+			<img src="resources/img/home-page/bg-menu.png" alt="bg">
+			<div class="menu-hidden__left-wrap">
+				<div class="langs">
+					<a href="#"><img src="resources/img/home-page/langs/r.png" alt="ru"></a>
+					<a href="#"><img src="resources/img/home-page/langs/united-kingdom.png" alt="en"></a>
+					<a class="active" href="#"><img src="resources/img/home-page/langs/ukraine.png" alt="ua"></a>
+				</div>
+				<br>
+				<div class="menu-hidden__centered">
+					<a class="menu-hidden__logo" href="/">
+						<img src="resources/img/home-page/Point73.png" alt="logo">
+					</a>
+					<div class="menu-hidden__text">
+						Говорим с клиентом, слушаем, что ему нужнои как мы можем в этом помочь.
+						Говорим с клиентом, слушаем, и как мы можем в этом помочь.
+						Говорим с клиентом, слушаем, что ему нужнчто ему нужно помочь....
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-hidden__right">
+			<div class="menu-hidden__nav">
+				<div class="drop-nav">
+					<nav class="f-nav drop-nav__nav">
+						<ul class="f-nav__list">
+							<li class="active"><a href="#">Главная</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Работы</a></li>
+							<li><a href="#">Отзывы</a></li>
+						</ul>
+					</nav>
+					<nav class="f-nav f-nav--favours drop-nav__favours">
+						<div class="f-title">Услуги</div>
+						<ul class="f-nav__list">
+							<li class="active"><a href="#">About Singleton</a></li>
+							<li><a href="#">Jobs</a></li>
+							<li><a href="#">Team</a></li>
+							<li><a href="#">Testimonials</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+					</nav>
+					<div class="footer__contacts drop-nav__contacts">
+						<div class="contacts">
+							<div class="f-title">Контакты</div>
+							<ul class="contacts__list">
+								<li>
+									<img src="resources/img/home-page/messangers/mes.png" alt="">
+									<a href="mailto:timofei.web@gmail.com">timofei.web@gmail.com</a>
+								</li>
+								<li>
+									<img src="resources/img/home-page/messangers/phone.png" alt="">
+									<a href="tel:+380969084855">+38 (096) 908-48-55</a>
+								</li>
+							</ul>
+						</div>
+						<div class="messengers">
+							<div class="f-title">Мессенджеры</div>
+							<div class="messengers__wrap">
+								<a class="social__item fb" href="#"><?xml version="1.0"?>
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+									     version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px"
+									     viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;"
+									     xml:space="preserve"><g><g>
+	<path
+		d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803   c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654   c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246   c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"
+		data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
+</g></g> </svg>
+								</a>
+								<a class="social__item vk" href="#"><?xml version="1.0"?>
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 304.36 304.36" style="enable-background:new 0 0 304.36 304.36;" xml:space="preserve" width="512px" height="512px"><g><g id="XMLID_1_">
+	<path id="XMLID_807_" d="M261.945,175.576c10.096,9.857,20.752,19.131,29.807,29.982   c4,4.822,7.787,9.798,10.684,15.394c4.105,7.955,0.387,16.709-6.746,17.184l-44.34-0.02c-11.436,0.949-20.559-3.655-28.23-11.474   c-6.139-6.253-11.824-12.908-17.727-19.372c-2.42-2.642-4.953-5.128-7.979-7.093c-6.053-3.929-11.307-2.726-14.766,3.587   c-3.523,6.421-4.322,13.531-4.668,20.687c-0.475,10.441-3.631,13.186-14.119,13.664c-22.414,1.057-43.686-2.334-63.447-13.641   c-17.422-9.968-30.932-24.04-42.691-39.971C34.828,153.482,17.295,119.395,1.537,84.353C-2.01,76.458,0.584,72.22,9.295,72.07   c14.465-0.281,28.928-0.261,43.41-0.02c5.879,0.086,9.771,3.458,12.041,9.012c7.826,19.243,17.402,37.551,29.422,54.521   c3.201,4.518,6.465,9.036,11.113,12.216c5.142,3.521,9.057,2.354,11.476-3.374c1.535-3.632,2.207-7.544,2.553-11.434   c1.146-13.383,1.297-26.743-0.713-40.079c-1.234-8.323-5.922-13.711-14.227-15.286c-4.238-0.803-3.607-2.38-1.555-4.799   c3.564-4.172,6.916-6.769,13.598-6.769h50.111c7.889,1.557,9.641,5.101,10.721,13.039l0.043,55.663   c-0.086,3.073,1.535,12.192,7.07,14.226c4.43,1.448,7.35-2.096,10.008-4.905c11.998-12.734,20.561-27.783,28.211-43.366   c3.395-6.852,6.314-13.968,9.143-21.078c2.096-5.276,5.385-7.872,11.328-7.757l48.229,0.043c1.43,0,2.877,0.021,4.262,0.258   c8.127,1.385,10.354,4.881,7.844,12.817c-3.955,12.451-11.65,22.827-19.174,33.251c-8.043,11.129-16.645,21.877-24.621,33.072   C252.26,161.544,252.842,166.697,261.945,175.576L261.945,175.576z M261.945,175.576" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
+</g></g> </svg>
+								</a>
+								<a class="social__item wp" href="#"><?xml version="1.0"?>
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px"><g><g>
+	<g>
+		<path d="M256.064,0h-0.128C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104l98.4-31.456    C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z M405.024,361.504    c-6.176,17.44-30.688,31.904-50.24,36.128c-13.376,2.848-30.848,5.12-89.664-19.264C189.888,347.2,141.44,270.752,137.664,265.792    c-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624,26.176-62.304c6.176-6.304,16.384-9.184,26.176-9.184    c3.168,0,6.016,0.16,8.576,0.288c7.52,0.32,11.296,0.768,16.256,12.64c6.176,14.88,21.216,51.616,23.008,55.392    c1.824,3.776,3.648,8.896,1.088,13.856c-2.4,5.12-4.512,7.392-8.288,11.744c-3.776,4.352-7.36,7.68-11.136,12.352    c-3.456,4.064-7.36,8.416-3.008,15.936c4.352,7.36,19.392,31.904,41.536,51.616c28.576,25.44,51.744,33.568,60.032,37.024    c6.176,2.56,13.536,1.952,18.048-2.848c5.728-6.176,12.8-16.416,20-26.496c5.12-7.232,11.584-8.128,18.368-5.568    c6.912,2.4,43.488,20.48,51.008,24.224c7.52,3.776,12.48,5.568,14.304,8.736C411.2,329.152,411.2,344.032,405.024,361.504z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
+	</g>
+</g></g> </svg>
+								</a>
+								<a class="social__item te" href="#"><?xml version="1.0"?>
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" width="512px" height="512px"><g><g id="XMLID_496_">
+	<path id="XMLID_497_" d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412   c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22   c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207   c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146   c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
+</g></g> </svg>
+								</a>
+								<a class="social__item vb" href="#">
+									<?xml version="1.0" encoding="utf-8"?>
+									<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E5E5E5;}
+	.st1{fill:#665CAC;}
+</style>
+										<g>
+	<polygon class="st0" points="209.6,183.8 217.9,175.5 217.9,175.5 209.6,183.8 	"/>
+
+											<rect x="292.2" y="264.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -99.469 288.2295)" class="st0" width="11.9" height="0"/>
+</g>
+										<path class="st1" d="M307.2,0H204.8C106,0,25.6,80.4,25.6,179.2V256c0,69.4,40,132.3,102.4,162v85.5c0,7.4,9.3,11.3,14.6,6
+	l74.3-74.3h90.3c98.8,0,179.2-80.4,179.2-179.2v-76.8C486.4,80.4,406,0,307.2,0z M273.1,128c-2.5,0-5.1,0.1-7.6,0.4
+	c-4.7,0.5-8.9-2.9-9.4-7.5c-0.5-4.7,2.9-8.9,7.5-9.4c3.1-0.3,6.3-0.5,9.5-0.5c47.1,0,85.3,38.3,85.3,85.3c0,3.2-0.2,6.3-0.5,9.5
+	c-0.5,4.6-4.8,8.1-9.4,7.5c-4.6-0.5-8.1-4.8-7.5-9.4c0.3-2.5,0.4-5.1,0.4-7.6C341.3,158.6,310.7,128,273.1,128z M324.3,196.3
+	c0,4.6-3.9,8.5-8.5,8.5c-4.7,0-8.5-3.9-8.5-8.5c0-18.8-15.3-34.1-34.1-34.1c-4.7,0-8.5-3.8-8.5-8.5c0-4.7,3.8-8.5,8.5-8.5
+	C301.3,145.1,324.3,168.1,324.3,196.3z M384.8,321.5c-2.5,11-8,21-16,29c-10.9,10.9-25.7,16.5-43.4,16.5c-4.7,0-9.7-0.4-14.8-1.2
+	c-40.8-6.4-97.6-26.4-134.6-63.3l-0.5-0.5c-36.9-37-56.9-93.8-63.3-134.6c-3.8-24.3,1.5-44.4,15.3-58.2c8-8,18-13.5,29-16
+	c1.1-0.3,2.3-0.3,3.4-0.1l41.6,7.7c3.4,0.6,6.1,3.3,6.8,6.7l12.1,60.3c0.6,2.8-0.3,5.7-2.3,7.7l-24.4,24.4
+	c20.2,43.1,43.1,66.1,84.4,84.6l24.5-24.5c2-2,4.9-2.9,7.7-2.3l60.3,12.1c3.4,0.7,6.1,3.4,6.7,6.8l7.7,41.6
+	C385.1,319.2,385,320.4,384.8,321.5z M389.4,223.9c-1.1,4.6-6,7.5-10.6,6.3c-4.4-1.2-7.1-5.8-6-10.2c1.8-7.7,2.7-15.7,2.7-23.6
+	c0-56.5-45.9-102.4-102.4-102.4c-2.6,0-5.3,0.1-7.9,0.3c-4.7,0.4-8.8-3.2-9.2-7.9c-0.4-4.7,3.2-8.8,7.9-9.2c3-0.2,6.1-0.3,9.2-0.3
+	c65.9,0,119.5,53.6,119.5,119.5C392.6,205.6,391.5,214.9,389.4,223.9z"/>
+</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<span class="menu-hidden__close js_close_menu">
+            <img src="resources/img/home-page/close.png" alt="close">
+          </span>
+		</div>
+	</div>
+</div>
+<div class="quis-container swiper-container">
+		<div class="quiz">
+			<img src="resources/img/map/close-popup.png" class="quiz__close js-quiz__close" />
+			<div class="quiz__layer">
+				<div class="quiz__title">Анализ <br> рентаьельности бизнеса</div>
+				<div class="quiz__slider ">
+					<form class="quiz__wrap swiper-wrapper">
+						<div class="quiz__item swiper-slide">
+							<h4>Выберите регион</h4>
+							<div class="select">
+								<div class="select__text">
+									Выберите Регион
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+										<g>
+											<path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+										</g>
+									</svg>
+
+								</div>
+								<div class="select__labels">
+									<label><span>Киев</span>
+										<input type="radio" name="1" value="Киев">
+									</label>
+									<label><span>Львов</span>
+										<input type="radio" name="1" value="Львов">
+									</label>
+									<label><span>Луцк</span>
+										<input type="radio" name="1" value="Луцк">
+									</label>
+									<label><span>Ивано Франковск</span>
+										<input type="radio" name="1" value="Ивано Франковск">
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="quiz__item swiper-slide">
+							<h4>Выберите регион 1</h4>
+							<div class="select">
+								<div class="select__text">
+									Выберите Регион
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+										<g>
+											<path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+										</g>
+									</svg>
+
+								</div>
+								<div class="select__labels">
+									<label><span>Киев</span>
+										<input type="radio" name="1" value="Киев">
+									</label>
+									<label><span>Львов</span>
+										<input type="radio" name="1" value="Львов">
+									</label>
+									<label><span>Луцк</span>
+										<input type="radio" name="1" value="Луцк">
+									</label>
+									<label><span>Ивано Франковск</span>
+										<input type="radio" name="1" value="Ивано Франковск">
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="quiz__item swiper-slide">
+							<h4>Выберите регион 2</h4>
+							<div class="select">
+								<div class="select__text">
+									Выберите Регион
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+										<g>
+											<path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+										</g>
+									</svg>
+
+								</div>
+								<div class="select__labels">
+									<label><span>Киев</span>
+										<input type="radio" name="1" value="Киев">
+									</label>
+									<label><span>Львов</span>
+										<input type="radio" name="1" value="Львов">
+									</label>
+									<label><span>Луцк</span>
+										<input type="radio" name="1" value="Луцк">
+									</label>
+									<label><span>Ивано Франковск</span>
+										<input type="radio" name="1" value="Ивано Франковск">
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="quiz__item swiper-slide">
+							<h4>Выберите регион 3</h4>
+							<div class="select">
+								<div class="select__text">
+									Выберите Регион
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+										<g>
+											<path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+										</g>
+									</svg>
+
+								</div>
+								<div class="select__labels">
+									<label><span>Киев</span>
+										<input type="radio" name="1" value="Киев">
+									</label>
+									<label><span>Львов</span>
+										<input type="radio" name="1" value="Львов">
+									</label>
+									<label><span>Луцк</span>
+										<input type="radio" name="1" value="Луцк">
+									</label>
+									<label><span>Ивано Франковск</span>
+										<input type="radio" name="1" value="Ивано Франковск">
+									</label>
+								</div>
+							</div>
+						</div>
+					</form>
+					<div class="quiz__progress">
+						<div class="quiz__persents">25%</div>
+						<div class="swiper-counter"></div>
+						<div class="quiz__pagination"></div>
+					</div>
+				</div>
+			</div>
+			<div id="quiz" class="slides-nav">
+				<button class="slides-nav__nav prev">
+					<?xml version="1.0" encoding="iso-8859-1"?>
+					<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					     viewBox="0 0 31.494 31.494" style="enable-background:new 0 0 31.494 31.494;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
+	c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
+	c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"/>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+						<g>
+</g>
+</svg>
+					<span>назад</span>
+				</button><button class="slides-nav__nav next">
+				<span>далее</span><?xml version="1.0" encoding="iso-8859-1"?>
+				<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+				<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				     viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+<path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+	C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+	c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+					<g>
+</g>
+</svg>
+			</button>
+			</div>
+		</div>
+</div>
+<script src="resources/js/vendors/jquery.js"></script>
+<script src="resources/js/vendors/slick.js"></script>
+<script src="resources/js/vendors/swiper.js"></script>
+<script src="resources/js/vendors/owl.js"></script>
+<script src="resources/js/vendors/animations.js"></script>
+<script src="resources/js/vendors/sliders.js"></script>
+<script src="resources/js/vendors/animations-numbers.js"></script>
+<script src="public/js/app.js"></script>
+</body>
+</html>
